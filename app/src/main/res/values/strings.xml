@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Bandar Properti</string>
+    <string name="search">Cari Properti</string>
+    <string name="tab1">Jual</string>
+    <string name="tab2">Sewa</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_account">Account</string>
+
+
+</resources>
