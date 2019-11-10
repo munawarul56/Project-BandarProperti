@@ -5,8 +5,12 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorWhite">#FFFFFF</color>
 
-    <color name="icon_logo_bandarproperti_background">#FFFFFF</color>
+    <color name="graylight">#CECECE</color>
+    <color name="startorange">#FF9800</color>
+    <color name="endorange">#FF5722</color>
 
+    <color name="icon_logo_bandarproperti_background">#FFFFFF</color>
+    <color name="background_orange">#D49720</color>
 
     <color name="colorNavIcon">#dae9f6</color>
     <color name="colorNavText">#01294b</color>

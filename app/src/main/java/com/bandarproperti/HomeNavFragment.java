@@ -21,7 +21,7 @@ public class HomeNavFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home_nav, container, false);
+        View view = inflater.inflate(R.layout.test, container, false);
         return view;
     }
 

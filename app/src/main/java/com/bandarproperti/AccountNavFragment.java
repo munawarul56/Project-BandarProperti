@@ -19,7 +19,7 @@ public class AccountNavFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_account_nav, container, false);
+        View view = inflater.inflate(R.layout.activity_profil, container, false);
         return view;
     }
 

@@ -43,16 +43,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/tab_jual"
-                android:text="Jual"
-                android:icon="@drawable/ic_jual"/>
+                android:text="Jual"/>
 
             <android.support.design.widget.TabItem
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/tab_sewa"
-                android:text="Sewa"
-                android:icon="@drawable/ic_sewa"/>
-
+                android:text="Sewa" />
         </android.support.design.widget.TabLayout>
 
         <android.support.v4.view.ViewPager
