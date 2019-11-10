@@ -15,14 +15,15 @@
         android:theme="@style/AppTheme"
         tools:replace="android:appComponentFactory"
         android:appComponentFactory="whateverString">
-        <activity android:name=".SplashScreen" />
+
+        <activity android:name=".MenuActivity" />
         <activity android:name=".ListFavoriteActivity" />
         <activity android:name=".FavoriteActivity" />
         <activity android:name=".ProfilActivity" />
         <activity android:name=".activity_welcome_screen" />
         <activity android:name=".MasukActivity" />
         <activity android:name=".DaftarActivity" />
-        <activity android:name=".MenuActivity">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
