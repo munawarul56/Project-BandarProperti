@@ -1,8 +1,11 @@
-package com.bandarproperti;
+package com.bandarproperti.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+
+import com.bandarproperti.JualFragment;
+import com.bandarproperti.SewaFragment;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
 

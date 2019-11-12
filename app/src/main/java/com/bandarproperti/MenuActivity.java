@@ -8,12 +8,19 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.view.MenuItem;
+import java.util.ArrayList;
+import android.support.v7.widget.RecyclerView;
 
 
 public class MenuActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     BottomNavigationView bottomNavigationView;
+
+    private RecyclerView recyclerView;
+    private Menu_Adapter adapter;
+    private ArrayList<MenuModel> menuArrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,30 +37,39 @@ public class MenuActivity extends AppCompatActivity implements BottomNavigationV
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
 
-        //TapLayout & ViewPager
-        final TabLayout tabLayout = findViewById(R.id.tab_layout);
-        final ViewPager viewPager = findViewById(R.id.pager);
-        PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
+//        //TapLayout & ViewPager
+//        final TabLayout tabLayout = findViewById(R.id.tab_layout);
+//        final ViewPager viewPager = findViewById(R.id.pager);
+//        PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
+//
+//        //Adapter ViewPager
+//        viewPager.setAdapter(pagerAdapter);
+//
+//        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+//
+//        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+//            @Override
+//            public void onTabSelected(TabLayout.Tab tab) {
+//                viewPager.setCurrentItem(tab.getPosition());
+//            }
+//
+//            @Override
+//            public void onTabUnselected(TabLayout.Tab tab) {
+//            }
+//
+//            @Override
+//            public void onTabReselected(TabLayout.Tab tab) {
+//            }
+//        });
 
-        //Adapter ViewPager
-        viewPager.setAdapter(pagerAdapter);
+        // Menu Adapter
+        addData();
 
-        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                viewPager.setCurrentItem(tab.getPosition());
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-            }
-        });
+        recyclerView = findViewById(R.id.recycler_view);
+        adapter = new Menu_Adapter(menuArrayList);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MenuActivity.this);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(adapter);
 
     }
 
@@ -81,4 +97,11 @@ public class MenuActivity extends AppCompatActivity implements BottomNavigationV
         return false;
     }
 
+    void addData() {
+        menuArrayList = new ArrayList<>();
+        menuArrayList.add(new MenuModel("Perumahan Damai Lestari", "img.jpg", "123456789", "300.000.000",
+                "Pango Raya,", "Banda Aceh", "BP-234R", "3", "2",
+                "1", "200-300m", "150-200m", "Perumahan Komplek Damai Lestari adalah perumahan semi minimalis yang ada pada desa pango raya",
+                "-", "-"));
+    }
 }

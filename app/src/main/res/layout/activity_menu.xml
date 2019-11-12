@@ -7,61 +7,11 @@
     tools:context=".MenuActivity"
     android:orientation="vertical">
 
-    <LinearLayout
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-    <android.support.v7.widget.SearchView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/search"
-        android:title="Cari"
-        android:autofillHints="Cari Properti"
-        android:icon="@drawable/ic_search"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:orientation="horizontal">
-
-        <!-- Menerapkan TabLayout dan ViewPager -->
-
-        <android.support.design.widget.TabLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tab_layout"
-            android:background="@color/orangebp"
-            app:tabTextColor="#FFFFFF"
-            app:tabMode="fixed"
-            app:tabSelectedTextColor="#FFFFFF">
-
-            <android.support.design.widget.TabItem
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/tab_jual"
-                android:text="Jual"/>
-
-            <android.support.design.widget.TabItem
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/tab_sewa"
-                android:text="Sewa" />
-        </android.support.design.widget.TabLayout>
-
-        <android.support.v4.view.ViewPager
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/pager"
-            android:layout_below="@id/tab_layout">
-
-        </android.support.v4.view.ViewPager>
-
-    </LinearLayout>
-
+        android:layout_height="match_parent"/>
 
 
     <FrameLayout
