@@ -15,12 +15,12 @@
         android:padding="20dp">
 
 
-<!--        <ImageView-->
-<!--            android:id="@+id/gambar"-->
-<!--            android:layout_width="80dp"-->
-<!--            android:layout_height="80dp"-->
-<!--            android:layout_marginTop="-18dp"-->
-<!--            android:src="@drawable/icon_logo_bandarproperti_background" />-->
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="-18dp"
+            android:src="@drawable/icon_logo_bandarproperti_background" />
 
         <TextView
             android:id="@+id/judul"
@@ -112,14 +112,14 @@
             android:id="@+id/jml_luas"
             android:layout_marginStart="190dp"
             android:layout_marginTop="-20dp"
-            android:layout_width="30dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="-"
             android:textSize="10dp"
             android:textStyle="bold" />
 
 
-        <!-- Luas -->
+        <!-- Harga -->
         <TextView
             android:id="@+id/txt_harga"
             android:layout_width="match_parent"
@@ -138,7 +138,7 @@
             android:layout_marginTop="8dp"
             android:text="Rp."
             android:textStyle="bold"
-            android:textSize="10dp"/>
+            android:textSize="13dp"/>
 
     </LinearLayout>
 

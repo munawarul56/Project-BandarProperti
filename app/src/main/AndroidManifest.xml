@@ -22,7 +22,7 @@
         <activity android:name=".ListFavoriteActivity" />
         <activity android:name=".FavoriteActivity" />
         <activity android:name=".ProfilActivity" />
-        <activity android:name=".activity_welcome_screen" />
+        <activity android:name=".WelcomeActivity" />
         <activity android:name=".MasukActivity" />
         <activity android:name=".DaftarActivity" />
         <activity android:name=".SplashScreen">

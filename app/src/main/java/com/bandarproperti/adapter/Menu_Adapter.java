@@ -1,10 +1,14 @@
-package com.bandarproperti;
+package com.bandarproperti.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bandarproperti.MenuModel;
+import com.bandarproperti.R;
 
 import java.util.ArrayList;
 
@@ -26,7 +30,12 @@ public class Menu_Adapter extends RecyclerView.Adapter<Menu_Adapter.MenuViewHold
 
     @Override
     public void onBindViewHolder(MenuViewHolder holder, int position) {
-        holder.txtJudul.setText(dataList.get(position).getJudul());
+//        holder.Gambar.set;
+        holder.Judul.setText(dataList.get(position).getJudul());
+        holder.Harga.setText(dataList.get(position).getHarga());
+        holder.jmlKamarTidur.setText(dataList.get(position).getKamar_tidur());
+        holder.jmlKamarMandi.setText(dataList.get(position).getKamar_mandi());
+        holder.LuasArea.setText(dataList.get(position).getLuas_area());
 
     }
 
@@ -36,11 +45,18 @@ public class Menu_Adapter extends RecyclerView.Adapter<Menu_Adapter.MenuViewHold
     }
 
     public class MenuViewHolder extends RecyclerView.ViewHolder{
-        private TextView txtJudul, txtNpm, txtNoHp;
+//        private ImageView Gambar;
+        private TextView Judul, Harga, jmlKamarTidur, jmlKamarMandi,LuasArea;
 
         public MenuViewHolder(View itemView) {
             super(itemView);
-            txtJudul = (TextView) itemView.findViewById(R.id.judul);
+//            Gambar = itemView.findViewById(R.id.gambar);
+            Judul = itemView.findViewById(R.id.judul);
+            Harga = itemView.findViewById(R.id.jml_harga);
+            jmlKamarTidur = itemView.findViewById(R.id.jml_kamar_tidur);
+            jmlKamarMandi = itemView.findViewById(R.id.jml_kamar_mandi);
+            LuasArea = itemView.findViewById(R.id.jml_luas);
+
         }
     }
 }

@@ -4,14 +4,14 @@ package com.bandarproperti;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.view.MenuItem;
 import java.util.ArrayList;
 import android.support.v7.widget.RecyclerView;
+
+import com.bandarproperti.adapter.Menu_Adapter;
 
 
 public class MenuActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
@@ -99,7 +99,7 @@ public class MenuActivity extends AppCompatActivity implements BottomNavigationV
 
     void addData() {
         menuArrayList = new ArrayList<>();
-        menuArrayList.add(new MenuModel("Perumahan Damai Lestari", "img.jpg", "123456789", "300.000.000",
+        menuArrayList.add(new MenuModel("Perumahan Damai Lestari", "img.jpg", "123456789", "Rp.300.000.000",
                 "Pango Raya,", "Banda Aceh", "BP-234R", "3", "2",
                 "1", "200-300m", "150-200m", "Perumahan Komplek Damai Lestari adalah perumahan semi minimalis yang ada pada desa pango raya",
                 "-", "-"));
