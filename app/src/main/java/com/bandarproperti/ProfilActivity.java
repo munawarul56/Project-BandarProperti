@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class ProfilActivity extends AppCompatActivity {
 
@@ -13,9 +14,9 @@ public class ProfilActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profil);
 
-        Button btn1 = findViewById(R.id.btnEdit);
+        TextView edit = findViewById(R.id.textEdit);
 
-        btn1.setOnClickListener(new View.OnClickListener() {
+        edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent edit = new Intent(ProfilActivity.this, EditProfilActivity.class);

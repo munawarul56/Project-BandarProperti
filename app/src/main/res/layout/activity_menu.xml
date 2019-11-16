@@ -28,9 +28,5 @@
         android:layout_alignParentBottom="true"
         app:itemBackground="@color/orangebp"
         app:itemIconTint="@color/colorWhite"
-        app:itemTextColor="@color/colorWhite"
-        app:tabSelectedTextColor="#FFFFFF"
         app:menu="@menu/bottom_menu"/>
-
-
 </RelativeLayout>

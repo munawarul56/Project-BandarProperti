@@ -20,7 +20,7 @@ public class MasukActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Masuklogin = new Intent(MasukActivity.this, MenuActivity.class);
+                Intent Masuklogin = new Intent(MasukActivity.this, ProfilActivity.class);
                 MasukActivity.this.startActivity(Masuklogin);
             }
         });
