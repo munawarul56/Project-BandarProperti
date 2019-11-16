@@ -5,15 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".JualFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:gravity="center"
-        android:text="Menu Jual"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+
 
 </RelativeLayout>

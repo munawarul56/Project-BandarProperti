@@ -7,11 +7,13 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
-import android.view.MenuItem;
-import java.util.ArrayList;
 import android.support.v7.widget.RecyclerView;
+import android.view.MenuItem;
 
 import com.bandarproperti.adapter.Menu_Adapter;
+import com.bandarproperti.HomeNavFragment;
+
+import java.util.ArrayList;
 
 
 public class MenuActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
@@ -64,7 +66,6 @@ public class MenuActivity extends AppCompatActivity implements BottomNavigationV
 
         // Menu Adapter
         addData();
-
         recyclerView = findViewById(R.id.recycler_view);
         adapter = new Menu_Adapter(menuArrayList);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MenuActivity.this);
@@ -99,9 +100,13 @@ public class MenuActivity extends AppCompatActivity implements BottomNavigationV
 
     void addData() {
         menuArrayList = new ArrayList<>();
-        menuArrayList.add(new MenuModel("Perumahan Damai Lestari", "img.jpg", "123456789", "Rp.300.000.000",
+        menuArrayList.add(new MenuModel(R.drawable.gambar,"Perumahan Damai Lestari",  "123456789", "Rp.300.000.000",
                 "Pango Raya,", "Banda Aceh", "BP-234R", "3", "2",
                 "1", "200-300m", "150-200m", "Perumahan Komplek Damai Lestari adalah perumahan semi minimalis yang ada pada desa pango raya",
+                "-", "-"));
+        menuArrayList.add(new MenuModel(R.drawable.gambar,"Perumahan Ina Resident",  "123456789", "Rp.500.000.000",
+                "Ulee Kareng,", "Banda Aceh", "BP-263R", "4", "3",
+                "1", "300-450m", "200-300m", "Perumahan Ina Resident adalah perumahan semi  yang berlokasi di ULee Kareng",
                 "-", "-"));
     }
 }

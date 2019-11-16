@@ -30,7 +30,8 @@ public class Menu_Adapter extends RecyclerView.Adapter<Menu_Adapter.MenuViewHold
 
     @Override
     public void onBindViewHolder(MenuViewHolder holder, int position) {
-//        holder.Gambar.set;
+
+        holder.Gambar.setImageResource(dataList.get(position).getGambar());
         holder.Judul.setText(dataList.get(position).getJudul());
         holder.Harga.setText(dataList.get(position).getHarga());
         holder.jmlKamarTidur.setText(dataList.get(position).getKamar_tidur());
@@ -45,12 +46,12 @@ public class Menu_Adapter extends RecyclerView.Adapter<Menu_Adapter.MenuViewHold
     }
 
     public class MenuViewHolder extends RecyclerView.ViewHolder{
-//        private ImageView Gambar;
+        private ImageView Gambar;
         private TextView Judul, Harga, jmlKamarTidur, jmlKamarMandi,LuasArea;
 
         public MenuViewHolder(View itemView) {
             super(itemView);
-//            Gambar = itemView.findViewById(R.id.gambar);
+            Gambar = itemView.findViewById(R.id.ivGambar);
             Judul = itemView.findViewById(R.id.judul);
             Harga = itemView.findViewById(R.id.jml_harga);
             jmlKamarTidur = itemView.findViewById(R.id.jml_kamar_tidur);

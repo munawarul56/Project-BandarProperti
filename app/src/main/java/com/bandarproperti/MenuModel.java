@@ -3,7 +3,7 @@ package com.bandarproperti;
 public class MenuModel {
 
     private String judul;
-    private String gambar;
+    private int gambar;
     private String fasilitas;
     private String harga;
     private String lokasi;
@@ -18,13 +18,13 @@ public class MenuModel {
     private String fitur;
     private String map;
 
-    public MenuModel(String judul, String gambar, String fasilitas,String harga, String lokasi,
+    public MenuModel(int gambar, String judul, String fasilitas,String harga, String lokasi,
                      String kategori_lokasi, String id_properti, String kamar_tidur,
                      String kamar_mandi,String garasi, String luas_area, String luas_bangunan,
                      String deskripsi, String fitur, String map) {
 
-        this.judul = judul;
         this.gambar = gambar;
+        this.judul = judul;
         this.fasilitas = fasilitas;
         this.harga = harga;
         this.lokasi = lokasi;
@@ -41,20 +41,20 @@ public class MenuModel {
 
     }
 
+    public int getGambar() {
+        return gambar;
+    }
+
+    public void setGambar(int gambar) {
+        this.gambar = gambar;
+    }
+
     public String getJudul() {
         return judul;
     }
 
     public void setJudul(String judul) {
         this.judul = judul;
-    }
-
-    public String getGambar() {
-        return gambar;
-    }
-
-    public void setGambar(String gambar) {
-        this.gambar = gambar;
     }
 
     public String getFasilitas() {
