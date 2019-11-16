@@ -1,5 +1,7 @@
 package com.bandarproperti.adapter;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +9,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bandarproperti.DetailMenuActivity;
+import com.bandarproperti.MasukActivity;
+import com.bandarproperti.MenuActivity;
 import com.bandarproperti.MenuModel;
 import com.bandarproperti.R;
 
@@ -16,6 +21,7 @@ import java.util.ArrayList;
 public class Menu_Adapter extends RecyclerView.Adapter<Menu_Adapter.MenuViewHolder> {
 
     private ArrayList<MenuModel> dataList;
+    Context context;
 
     public Menu_Adapter(ArrayList<MenuModel> dataList) {
         this.dataList = dataList;
@@ -29,7 +35,7 @@ public class Menu_Adapter extends RecyclerView.Adapter<Menu_Adapter.MenuViewHold
     }
 
     @Override
-    public void onBindViewHolder(MenuViewHolder holder, int position) {
+    public void onBindViewHolder(final MenuViewHolder holder, int position) {
 
         holder.Gambar.setImageResource(dataList.get(position).getGambar());
         holder.Judul.setText(dataList.get(position).getJudul());
@@ -37,6 +43,15 @@ public class Menu_Adapter extends RecyclerView.Adapter<Menu_Adapter.MenuViewHold
         holder.jmlKamarTidur.setText(dataList.get(position).getKamar_tidur());
         holder.jmlKamarMandi.setText(dataList.get(position).getKamar_mandi());
         holder.LuasArea.setText(dataList.get(position).getLuas_area());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Context context = v.getContext();
+                Intent intent = new Intent(context, DetailMenuActivity.class);
+                context.startActivity(intent);
+            }
+        });
 
     }
 
@@ -57,6 +72,8 @@ public class Menu_Adapter extends RecyclerView.Adapter<Menu_Adapter.MenuViewHold
             jmlKamarTidur = itemView.findViewById(R.id.jml_kamar_tidur);
             jmlKamarMandi = itemView.findViewById(R.id.jml_kamar_mandi);
             LuasArea = itemView.findViewById(R.id.jml_luas);
+
+
 
         }
     }

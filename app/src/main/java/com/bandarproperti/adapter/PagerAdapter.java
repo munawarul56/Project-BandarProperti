@@ -4,8 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.bandarproperti.JualFragment;
-import com.bandarproperti.SewaFragment;
+import com.bandarproperti.fragment.JualFragment;
+import com.bandarproperti.fragment.SewaFragment;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
 

@@ -1,4 +1,4 @@
-package com.bandarproperti;
+package com.bandarproperti.fragment;
 
 
 import android.os.Bundle;
@@ -7,12 +7,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.bandarproperti.R;
 
-public class JualFragment extends Fragment {
+public class SewaFragment extends Fragment {
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view_frag1 = inflater.inflate(R.layout.fragment_jual, container, false);
+        View view_frag1 = inflater.inflate(R.layout.fragment_sewa, container, false);
         return view_frag1;
     }
 
