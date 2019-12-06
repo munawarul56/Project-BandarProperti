@@ -31,7 +31,6 @@
 
         <!-- Required to show current location -->
 
-        <activity android:name=".FirstActivity"/>
         <activity android:name=".SignInActivity" />
         <activity android:name=".HomeActivity"></activity>
         <activity android:name=".PropertyDetailsActivity"></activity>

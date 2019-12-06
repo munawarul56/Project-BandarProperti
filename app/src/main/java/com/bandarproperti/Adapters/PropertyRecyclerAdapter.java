@@ -1,6 +1,7 @@
 package com.bandarproperti.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.widget.RecyclerView;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import com.bandarproperti.ModelClasses.PropertyRecyclerModel;
+import com.bandarproperti.PropertyDetailsActivity;
 import com.bandarproperti.R;
 
 
@@ -72,6 +74,14 @@ public class PropertyRecyclerAdapter  extends RecyclerView.Adapter<PropertyRecyc
             holder.carParking.setText(lists.getCarParking());
             holder.swimmingpool.setText(lists.getSwimmingpool());
 
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Context context = v.getContext();
+                    Intent intent = new Intent(context, PropertyDetailsActivity.class);
+                    context.startActivity(intent);
+                }
+            });
 
         }
 

@@ -32,7 +32,7 @@
                 android:textSize="12dp"
                 android:textColor="#ffffff"
                 android:text="/"/>
-            <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12dp"

@@ -22,7 +22,7 @@
             android:id="@+id/profile_image"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/p3"
+            android:src="@drawable/ic_logo_bandar_properti_orange"
             app:civ_border_color="#00000000"
             app:civ_border_width="2dp"
             android:layout_marginLeft="10dp"
@@ -37,14 +37,14 @@
             <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="John Doe"
+                android:text="Bandar Properti"
                 android:textSize="12dp"
                 android:textColor="#000"/>
             <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/subText"
-                android:text="xyz"
+                android:text="0813-6019-5804"
                 />
         </LinearLayout>
         <ImageView
