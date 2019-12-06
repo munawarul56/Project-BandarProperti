@@ -22,12 +22,12 @@ public class HomeActivity extends AppCompatActivity {
     private PropertyRecyclerAdapter mAdapter;
     TextView refine;
 
-    private String propertyName[]={"Property Name","Property Name","Property Name"};
-    private String street1[]={"14 Street/3rd Block","14 Street/3rd Block","14 Street/3rd Block"};
-    private String street2[]={"Super Build-up Area:1060 Sq.Ft","Super Build-up Area:1060 Sq.Ft","Super Build-up Area:1060 Sq.Ft"};
-    private String amount[]={"$2200","$2200","$2200"};
-    private String bedcount[]={"3","3","3"};
-    private String carParking[]={"1","1","1"};
+    private String propertyName[]={"Royal De Khansa Residence","Property Name","Property Name"};
+    private String type[]={"Type 65","14 Street/3rd Block","14 Street/3rd Block"};
+    private String street2[]={"Desa Kalut,Ingin Jaya, Aceh Besar","Super Build-up Area:1060 Sq.Ft","Super Build-up Area:1060 Sq.Ft"};
+    private String amount[]={"Rp.465.000.000,-","$2200","$2200"};
+    private String bedcount[]={"2","3","3"};
+    private String carParking[]={"2","1","1"};
     private String swimmingpool[]={"1","1","1"};
 
     @Override
@@ -50,7 +50,7 @@ public class HomeActivity extends AppCompatActivity {
         homeListModelClassArrayList = new ArrayList<>();
 
         for (int i = 0; i < propertyName.length; i++) {
-            PropertyRecyclerModel beanClassForRecyclerView_contacts = new PropertyRecyclerModel(propertyName[i], street1[i],street2[i],amount[i],bedcount[i],carParking[i],swimmingpool[i]);
+            PropertyRecyclerModel beanClassForRecyclerView_contacts = new PropertyRecyclerModel(propertyName[i], type[i],street2[i],amount[i],bedcount[i],carParking[i],swimmingpool[i]);
 
             homeListModelClassArrayList.add(beanClassForRecyclerView_contacts);
         }

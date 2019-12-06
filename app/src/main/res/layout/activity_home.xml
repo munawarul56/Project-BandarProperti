@@ -23,6 +23,7 @@
             android:layout_marginLeft="10dp"
             android:layout_gravity="center_vertical"
             app:srcCompat="@drawable/ic_left_arrow"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,12 +33,13 @@
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:background="@drawable/search_rect">
+
             <ImageView
-                android:layout_width="15dp"
+                android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginLeft="10dp"
-                app:srcCompat="@drawable/ic_search"
-                tools:ignore="VectorDrawableCompat" />
+                android:background="@drawable/ic_search_new" />
+
             <com.bandarproperti.customfonts.EditText_Roboto_Regular
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -71,7 +73,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textColor="#000"
-            android:text="SORT"
+            android:text="JUAL"
             android:textSize="13dp"
             android:gravity="center_horizontal"
             android:layout_weight="1"/>
@@ -87,7 +89,7 @@
             android:id="@+id/refine"
             android:layout_height="wrap_content"
             android:textColor="#000"
-            android:text="REFINE"
+            android:text="SEWA"
             android:textSize="13dp"
             android:gravity="center_horizontal"
             android:layout_weight="1"/>
@@ -138,7 +140,7 @@
                 <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Home"
+                    android:text="Beranda"
                     android:textColor="#2ebcff" />
 
             </LinearLayout>
@@ -160,7 +162,7 @@
                 <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Favorite" />
+                    android:text="Favorit" />
 
             </LinearLayout>
 
@@ -181,7 +183,7 @@
                 <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Contact Us" />
+                    android:text="Hubungi Kami" />
             </LinearLayout>
 
 
@@ -201,7 +203,7 @@
                 <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Account" />
+                    android:text="Akun" />
 
             </LinearLayout>
 

@@ -29,13 +29,13 @@ public class PropertyRecyclerAdapter  extends RecyclerView.Adapter<PropertyRecyc
         public class MyViewHolder extends RecyclerView.ViewHolder {
 
 
-            TextView propertyName,street1,street2,amount,bedCount,carParking,swimmingpool;
+            TextView propertyName,type,street2,amount,bedCount,carParking,swimmingpool;
 
             public MyViewHolder(View view) {
                 super(view);
 
                 propertyName=(TextView) view.findViewById(R.id.propertyName);
-                street1=(TextView)view.findViewById(R.id.street1);
+                type=(TextView)view.findViewById(R.id.type);
                 street2=(TextView)view.findViewById(R.id.street2);
                 amount=(TextView) view.findViewById(R.id.amount);
                 bedCount=(TextView) view.findViewById(R.id.bedCount);
@@ -67,7 +67,7 @@ public class PropertyRecyclerAdapter  extends RecyclerView.Adapter<PropertyRecyc
             PropertyRecyclerModel lists = OfferList.get(position);
 
             holder.propertyName.setText(lists.getPropertyName());
-            holder.street1.setText(lists.getStreet1());
+            holder.type.setText(lists.getType());
             holder.street2.setText(lists.getStreet2());
             holder.amount.setText(lists.getAmount());
             holder.bedCount.setText(lists.getBedCount());

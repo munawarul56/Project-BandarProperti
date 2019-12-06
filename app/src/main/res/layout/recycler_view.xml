@@ -14,8 +14,7 @@
         android:layout_height="130dp"
         app:siShape="@drawable/image_corner"
         android:id="@+id/foodImage"
-        android:src="@drawable/property"
-        />
+        android:src="@drawable/property"/>
 
 
     <LinearLayout
@@ -34,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
-                android:text="Property Name"
+                android:text="Royal De Khansa Residence"
                 android:textColor="#000"
                 android:textSize="14dp" />
 
@@ -46,21 +45,21 @@
         </LinearLayout>
 
         <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-            android:id="@+id/street1"
+            android:id="@+id/type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="8dp"
-            android:text="14 Street/3rd Block"
+            android:text="Type 260 "
             android:textColor="#A2A2A2"
-            android:textSize="12dp" />
+            android:textSize="13dp" />
 
         <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
             android:id="@+id/street2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="Super Build-up Area:1060 Sq.Ft"
+            android:text="Desa Kalut,Ingin Jaya, Aceh Besar"
             android:textColor="#A2A2A2"
             android:textSize="12dp" />
 
@@ -69,8 +68,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:text="$2200"
+            android:layout_marginTop="12dp"
+            android:text="Rp.465.000.000,-"
             android:textColor="#000"
             android:textSize="14dp" />
 

@@ -90,28 +90,28 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_weight="1"
-                    android:text="Property Name"
+                    android:text="Royal De Khansa Residence"
                     android:textColor="#000"
                     android:textSize="14dp" />
 
             </LinearLayout>
 
             <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                android:id="@+id/street1"
+                android:id="@+id/type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="8dp"
-                android:text="14 Street/3rd Block"
+                android:text="Type 65"
                 android:textColor="#A2A2A2"
-                android:textSize="12dp" />
+                android:textSize="13dp" />
 
             <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                 android:id="@+id/street2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="Super Build-up Area:1060 Sq.Ft"
+                android:text="Desa Kalut,Ingin Jaya, Aceh Besar"
                 android:textColor="#A2A2A2"
                 android:textSize="12dp" />
             <LinearLayout
@@ -125,17 +125,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:text="$2200"
+                android:text="Rp.465.000.000,-"
                 android:textColor="#000"
                 android:textSize="14dp" />
 
-                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="$55/Sq.Ft"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="7dp"
-                    android:textColor="#A2A2A2"/>
+
             </LinearLayout>
 
             <LinearLayout
@@ -198,131 +192,9 @@
             android:layout_height="0.7dp"
             android:background="#dddddd"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#ffffff"
-        android:layout_marginTop="10dp">
-        <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Location"
-            android:background="#ffffff"
-            android:paddingTop="10dp"
-            android:textSize="14dp"
-            android:paddingBottom="10dp"
-            android:paddingLeft="10dp"/>
-
-        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/map"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
-            tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#ffffff"
-            android:paddingTop="15dp"
-            android:paddingBottom="10dp">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    app:srcCompat="@drawable/rail"
-                    android:layout_marginLeft="17dp"/>
-                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Railway"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginLeft="17dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    app:srcCompat="@drawable/grocery1"
-                    android:layout_marginLeft="15dp"/>
-                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Grocery"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginLeft="15dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    app:srcCompat="@drawable/flight"
-                    android:layout_marginLeft="15dp"/>
-                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Flight"
-                    android:layout_marginTop="3dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="0dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    app:srcCompat="@drawable/rest"
-                    android:layout_marginLeft="28dp"/>
-                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Restaurant"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginLeft="15dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    app:srcCompat="@drawable/atm"
-                    android:layout_marginLeft="15dp"/>
-                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ATM"
-                    android:layout_marginTop="3dp"
-                    android:layout_gravity="center_horizontal"/>
-            </LinearLayout>
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#dddddd"/>
-    </LinearLayout>
-    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="130dp"
         android:orientation="horizontal"
         android:background="#ffffff"
         android:layout_marginTop="10dp">
@@ -336,96 +208,27 @@
             <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Key Details"
+                android:text="Detail Properti"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
-                android:textSize="14dp"
+                android:textSize="13dp"
                 android:textColor="@color/subText"/>
 
             <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Property Type"
+                android:text="Tipe Properti"
                 android:textSize="11dp"
                 android:textColor="@color/subText"/>
 
             <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Apartment/Flat"
+                android:text="Rumah"
                 android:textSize="13dp"
                 android:textColor="@color/mainText"/>
 
-            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/subText"
-                android:text="Furnished"
-                android:layout_marginTop="7dp"
-                android:textSize="11dp"/>
 
-            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Semi-furnished"
-                android:textSize="13dp"
-                android:textColor="@color/mainText"/>
-
-            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="QuickPro No."
-                android:layout_marginTop="7dp"
-                android:textSize="11dp"
-                android:textColor="@color/subText"/>
-
-            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ER2342"
-                android:textSize="13dp"
-                android:textColor="@color/mainText"/>
-
-            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="More Details"
-                android:paddingBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:textColor="#2ebcff"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="30dp">
-            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Land Type"
-                android:layout_marginTop="22dp"
-                android:textSize="11dp"
-                android:textColor="@color/subText"/>
-            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Residential"
-                android:textSize="13dp"
-                android:textColor="@color/mainText"/>
-            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tenure"
-                android:textSize="11dp"
-                android:layout_marginTop="7dp"
-                android:textColor="@color/subText"/>
-            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Freehld"
-                android:textSize="13dp"
-                android:textColor="@color/mainText"/>
             <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -440,6 +243,48 @@
                 android:text="March 03,2018"
                 android:textSize="13dp"
                 android:textColor="@color/mainText"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp">
+
+            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luas Area"
+                android:layout_marginTop="22dp"
+                android:textSize="11dp"
+                android:textColor="@color/subText"/>
+
+            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="159-204 m"
+                android:textSize="13dp"
+                android:textColor="@color/mainText"/>
+
+            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luas Bangunan"
+                android:textSize="11dp"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/subText"/>
+
+            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="13dp"
+                android:textColor="@color/mainText"/>
+
+
         </LinearLayout>
     </LinearLayout>
         <View
@@ -453,52 +298,56 @@
            android:paddingLeft="10dp"
             android:background="#ffffff"
             android:layout_marginTop="10dp">
+
             <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Facilities"
+                android:text="Fasilitas"
                 android:paddingLeft="10dp"
                 android:textSize="14dp"
                 android:textColor="@color/subText"
                 android:layout_marginTop="15dp"/>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginTop="15dp">
+
                 <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/facilities_rect"
-                    android:text="Gym"
+                    android:text="Air PDAM"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/facilities_rect"
+                    android:text="Mini Market"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/facilities_rect"
+                    android:text="Mushola"
                     android:paddingLeft="7dp"
                     android:paddingRight="7dp"
                     android:paddingBottom="5dp"
                     android:paddingTop="5dp"
                     android:layout_marginLeft="10dp"
                     />
-                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/facilities_rect"
-                    android:text="Club House"
-                    android:paddingLeft="7dp"
-                    android:paddingRight="7dp"
-                    android:paddingBottom="5dp"
-                    android:paddingTop="5dp"
-                    android:layout_marginLeft="10dp"
-                    />
-                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/facilities_rect"
-                    android:text="Jogging Track"
-                    android:paddingLeft="7dp"
-                    android:paddingRight="7dp"
-                    android:paddingBottom="5dp"
-                    android:paddingTop="5dp"
-                    android:layout_marginLeft="10dp"
-                    />
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -506,31 +355,34 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="10dp"
                 android:paddingBottom="10dp">
+
                 <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/facilities_rect"
-                    android:text="Plat Ground"
+                    android:text="Security 24 Jam"
                     android:paddingLeft="7dp"
                     android:paddingRight="7dp"
                     android:paddingBottom="5dp"
                     android:paddingTop="5dp"
                     android:layout_marginLeft="10dp" />
+
                 <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/facilities_rect"
-                    android:text="Tennis Court"
+                    android:text="Dapur"
                     android:paddingLeft="7dp"
                     android:paddingRight="7dp"
                     android:paddingBottom="5dp"
                     android:paddingTop="5dp"
                     android:layout_marginLeft="10dp" />
+
                 <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/facilities_rect"
-                    android:text="24*7 Jogging Track"
+                    android:text="Kanopi"
                     android:paddingLeft="7dp"
                     android:paddingRight="7dp"
                     android:paddingBottom="5dp"
@@ -542,26 +394,30 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="#dddddd"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="#ffffff"
             android:layout_marginTop="10dp">
+
             <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Description"
+                android:text="Deskripsi"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:textSize="14dp"
                 android:textColor="@color/subText"/>
+
             <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="@string/description"
                 android:layout_marginTop="10dp"/>
+
             <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -579,11 +435,12 @@
     </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="160dp"
             android:orientation="vertical"
             android:background="#ffffff"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="90dp">
+            android:layout_marginBottom="80dp">
+
             <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -592,11 +449,13 @@
                 android:text="Contact Info."
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginTop="20dp">
+
                 <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/profile_image"
                     android:layout_width="50dp"
@@ -688,7 +547,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#2ebcff"
-                android:text="Home"
+                android:text="Beranda"
                 android:layout_marginTop="3dp"
                 android:textSize="10dp"/>
         </LinearLayout>
@@ -709,7 +568,7 @@
             <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Favorite"
+                android:text="Favorit"
                 android:layout_marginTop="3dp"
                 android:textSize="10dp"/>
         </LinearLayout>
@@ -731,7 +590,7 @@
             <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Contact Us"
+                android:text="Hubungi Kami"
                 android:textSize="10dp"
                 android:layout_marginTop="3dp"/>
         </LinearLayout>
@@ -751,7 +610,7 @@
             <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Account"
+                android:text="Akun"
                 android:textSize="10dp"
                 android:layout_marginTop="3dp"/>
 

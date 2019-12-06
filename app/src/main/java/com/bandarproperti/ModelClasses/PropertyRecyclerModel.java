@@ -3,11 +3,11 @@ package com.bandarproperti.ModelClasses;
 
 public class PropertyRecyclerModel {
 
-    String propertyName,street1,street2,amount,bedCount,carParking,swimmingpool;
+    String propertyName,type,street2,amount,bedCount,carParking,swimmingpool;
 
-    public PropertyRecyclerModel(String propertyName, String street1, String street2, String amount, String bedCount, String carParking, String swimmingpool) {
+    public PropertyRecyclerModel(String propertyName, String type, String street2, String amount, String bedCount, String carParking, String swimmingpool) {
         this.propertyName = propertyName;
-        this.street1 = street1;
+        this.type = type;
         this.street2 = street2;
         this.amount = amount;
         this.bedCount = bedCount;
@@ -23,12 +23,12 @@ public class PropertyRecyclerModel {
         this.propertyName = propertyName;
     }
 
-    public String getStreet1() {
-        return street1;
+    public String getType() {
+        return type;
     }
 
-    public void setStreet1(String street1) {
-        this.street1 = street1;
+    public void setType(String street1) {
+        this.type = type;
     }
 
     public String getStreet2() {
