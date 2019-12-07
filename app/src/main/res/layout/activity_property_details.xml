@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PropertyDetailsActivity">
-<LinearLayout
+
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
     <include layout="@layout/toolbar_property" />
-    <ScrollView
+
+        <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="none">
@@ -92,7 +94,7 @@
                     android:layout_weight="1"
                     android:text="Royal De Khansa Residence"
                     android:textColor="#000"
-                    android:textSize="14dp" />
+                    android:textSize="15dp" />
 
             </LinearLayout>
 
@@ -101,7 +103,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="5dp"
                 android:text="Type 65"
                 android:textColor="#A2A2A2"
                 android:textSize="13dp" />
@@ -110,8 +112,9 @@
                 android:id="@+id/street2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
-                android:text="Desa Kalut,Ingin Jaya, Aceh Besar"
+                android:text="Desa Kalut, Ingin Jaya, Aceh Besar"
                 android:textColor="#A2A2A2"
                 android:textSize="12dp" />
             <LinearLayout
@@ -303,7 +306,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Fasilitas"
-                android:paddingLeft="10dp"
+                android:paddingLeft="5dp"
                 android:textSize="14dp"
                 android:textColor="@color/subText"
                 android:layout_marginTop="15dp"/>

@@ -9,31 +9,30 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-
     <application
         android:allowBackup="true"
         android:appComponentFactory="whateverString"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/icon_logo_bandarproperti"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:hardwareAccelerated="false"
-        android:largeHeap="true"
         tools:replace="android:appComponentFactory">
+        <activity android:name=".AkunActivity"></activity>
+        <activity android:name=".HubungiKamiActivity" />
+        <activity android:name=".FavoritActivity" />
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAq0LRjY-WEAKoQ4mPhFOeu4S_9Cte1-M0" />
-
-        <!-- Required to show current location -->
-
+            android:value="AIzaSyAq0LRjY-WEAKoQ4mPhFOeu4S_9Cte1-M0" /> <!-- Required to show current location -->
         <activity android:name=".SignInActivity" />
-        <activity android:name=".HomeActivity"></activity>
-        <activity android:name=".PropertyDetailsActivity"></activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".PropertyDetailsActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
