@@ -4,108 +4,138 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFF1744"
     tools:context=".HubungiKamiActivity">
 
 
-
-    <FrameLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Activity Hubungi Kami"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:textSize="25dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="#ffff"
+        android:orientation="horizontal"
         android:layout_alignParentBottom="true">
 
-
-        <LinearLayout
+        <android.support.design.widget.BottomNavigationView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:background="#ffff"
-            android:orientation="horizontal">
+            android:id="@+id/bottom_navigation"
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="55dp"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+            app:itemTextColor="@drawable/selector"
+            app:itemIconTint="@drawable/selector"
+            app:menu="@menu/menu_navigation"
+            android:layout_alignParentBottom="true"/>
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    app:srcCompat="@drawable/ic_blue_home" />
-
-                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Beranda"
-                    android:textColor="#2ebcff" />
-
-            </LinearLayout>
+    </LinearLayout>
 
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="55dp"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    app:srcCompat="@drawable/ic_catalogue_1" />
-
-                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Favorit" />
-
-            </LinearLayout>
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true">-->
 
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="55dp"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:background="#ffff"-->
+<!--            android:orientation="horizontal">-->
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    app:srcCompat="@drawable/ic_home_phn" />
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="55dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
 
-                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Hubungi Kami" />
-            </LinearLayout>
+<!--                <ImageView-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    app:srcCompat="@drawable/ic_blue_home" />-->
+
+<!--                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Beranda"-->
+<!--                    android:textColor="#2ebcff" />-->
+
+<!--            </LinearLayout>-->
 
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="55dp"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="55dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    app:srcCompat="@drawable/ic_user" />
+<!--                <ImageView-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    app:srcCompat="@drawable/ic_catalogue_1" />-->
 
-                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Akun" />
+<!--                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Favorit" />-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
-        </LinearLayout>
 
-    </FrameLayout>
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="55dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    app:srcCompat="@drawable/ic_home_phn" />-->
+
+<!--                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Hubungi Kami" />-->
+<!--            </LinearLayout>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="55dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    app:srcCompat="@drawable/ic_user" />-->
+
+<!--                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Akun" />-->
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </FrameLayout>-->
 
 </RelativeLayout>

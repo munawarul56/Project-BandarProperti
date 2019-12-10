@@ -1,11 +1,14 @@
 package com.bandarproperti;
 
 import android.content.Intent;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
@@ -36,8 +39,44 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         HomeActivity.this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
-       refine=(TextView)findViewById(R.id.refine);
-        recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
+        //Inisiasi & Assign Variable
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+        //Set Home Selected
+        bottomNavigationView.setSelectedItemId(R.id.beranda);
+
+        //Perform ItemSelectedListener
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+
+                    case R.id.beranda:
+                        return true;
+
+                    case R.id.favorit:
+                        startActivity(new Intent(getApplicationContext(),FavoritActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                    case R.id.hubungikami:
+                        startActivity(new Intent(getApplicationContext(),HubungiKamiActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                    case R.id.akun:
+                        startActivity(new Intent(getApplicationContext(),AkunActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                }
+                return false;
+            }
+        });
+
+
+
+       refine = findViewById(R.id.refine);
+       recyclerView = findViewById(R.id.recyclerView);
 
        refine.setOnClickListener(new View.OnClickListener() {
            @Override
