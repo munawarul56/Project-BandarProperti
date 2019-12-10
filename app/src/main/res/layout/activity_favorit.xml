@@ -4,17 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF64DD17"
     tools:context=".FavoritActivity">
 
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Activity Favorite"
-        android:textStyle="bold"
-        android:layout_centerInParent="true"
-        android:textSize="25dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+
+
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="628dp"
+            android:background="#f5f5f5"
+            android:clipToPadding="false"
+            android:elevation="1dp"
+            android:paddingBottom="60dp"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
 
 
     <LinearLayout
@@ -38,104 +54,6 @@
     </LinearLayout>
 
 
-<!--    <FrameLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentBottom="true">-->
 
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="0dp"-->
-<!--            android:background="#ffff"-->
-<!--            android:orientation="horizontal">-->
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="55dp"-->
-<!--                android:layout_gravity="center_vertical"-->
-<!--                android:layout_weight="1"-->
-<!--                android:gravity="center"-->
-<!--                android:orientation="vertical">-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="20dp"-->
-<!--                    android:layout_height="20dp"-->
-<!--                    app:srcCompat="@drawable/ic_blue_home" />-->
-
-<!--                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Beranda"-->
-<!--                    android:textColor="#2ebcff" />-->
-
-<!--            </LinearLayout>-->
-
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="55dp"-->
-<!--                android:layout_gravity="center_vertical"-->
-<!--                android:layout_weight="1"-->
-<!--                android:gravity="center"-->
-<!--                android:orientation="vertical">-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="20dp"-->
-<!--                    android:layout_height="20dp"-->
-<!--                    app:srcCompat="@drawable/ic_catalogue_1" />-->
-
-<!--                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Favorit" />-->
-
-<!--            </LinearLayout>-->
-
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="55dp"-->
-<!--                android:layout_gravity="center_vertical"-->
-<!--                android:layout_weight="1"-->
-<!--                android:gravity="center"-->
-<!--                android:orientation="vertical">-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="20dp"-->
-<!--                    android:layout_height="20dp"-->
-<!--                    app:srcCompat="@drawable/ic_home_phn" />-->
-
-<!--                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Hubungi Kami" />-->
-<!--            </LinearLayout>-->
-
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="55dp"-->
-<!--                android:layout_gravity="center_vertical"-->
-<!--                android:layout_weight="1"-->
-<!--                android:gravity="center"-->
-<!--                android:orientation="vertical">-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="20dp"-->
-<!--                    android:layout_height="20dp"-->
-<!--                    app:srcCompat="@drawable/ic_user" />-->
-
-<!--                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Akun" />-->
-
-<!--            </LinearLayout>-->
-
-<!--        </LinearLayout>-->
-
-<!--    </FrameLayout>-->
 
 </RelativeLayout>
