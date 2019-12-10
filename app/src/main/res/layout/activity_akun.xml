@@ -4,16 +4,127 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF00B8D4"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".AkunActivity">
 
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Activity Account"
-    android:textStyle="bold"
-    android:layout_centerInParent="true"
-    android:textSize="25dp"/>
+   <android.support.v7.widget.CardView
+       android:layout_width="410dp"
+       android:layout_height="200dp"
+       card_view:cardBackgroundColor="#FFAB00">
+
+
+       <ImageView
+           android:layout_width="120dp"
+           android:layout_height="120dp"
+           app:srcCompat="@drawable/atm"
+           android:layout_marginTop="30dp"
+           android:layout_marginLeft="125dp"
+           android:id="@+id/fotoprofil"
+           >
+       </ImageView>
+
+       <TextView
+           android:layout_width="200dp"
+           android:layout_height="30dp"
+           android:layout_marginLeft="100dp"
+           android:layout_marginTop="155dp"
+           android:id="@+id/namaprofil"
+           android:textColor="#000"
+           android:textSize="20dp"
+           android:text="Furqan A'la Maududy">
+
+       </TextView>
+
+
+
+   </android.support.v7.widget.CardView>
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="420dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="220dp">
+
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="Alamat :"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+
+        </TextView>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="No Hp :"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            >
+
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:id="@+id/alamatprofil"
+            android:text=""
+            android:textColor="#000"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            >
+
+
+        </TextView>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:id="@+id/nohpprofil"
+            android:text=""
+
+            android:textColor="#000"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="60dp"
+            >
+
+
+        </TextView>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <Button
+        android:layout_width="425dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="400dp"
+        android:id="@+id/keluar"
+        android:background="@color/bandarcolour2"
+        android:text="KELUAR"
+        android:textColor="#000">
+
+    </Button>
+
+
+
+
+
+
+
+
+
 
 
     <LinearLayout
@@ -37,104 +148,5 @@
     </LinearLayout>
 
 
-<!--    <FrameLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentBottom="true">-->
-
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="0dp"-->
-<!--            android:background="#ffff"-->
-<!--            android:orientation="horizontal">-->
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="55dp"-->
-<!--                android:layout_gravity="center_vertical"-->
-<!--                android:layout_weight="1"-->
-<!--                android:gravity="center"-->
-<!--                android:orientation="vertical">-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="20dp"-->
-<!--                    android:layout_height="20dp"-->
-<!--                    app:srcCompat="@drawable/ic_blue_home" />-->
-
-<!--                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Beranda"-->
-<!--                    android:textColor="#2ebcff" />-->
-
-<!--            </LinearLayout>-->
-
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="55dp"-->
-<!--                android:layout_gravity="center_vertical"-->
-<!--                android:layout_weight="1"-->
-<!--                android:gravity="center"-->
-<!--                android:orientation="vertical">-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="20dp"-->
-<!--                    android:layout_height="20dp"-->
-<!--                    app:srcCompat="@drawable/ic_catalogue_1" />-->
-
-<!--                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Favorit" />-->
-
-<!--            </LinearLayout>-->
-
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="55dp"-->
-<!--                android:layout_gravity="center_vertical"-->
-<!--                android:layout_weight="1"-->
-<!--                android:gravity="center"-->
-<!--                android:orientation="vertical">-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="20dp"-->
-<!--                    android:layout_height="20dp"-->
-<!--                    app:srcCompat="@drawable/ic_home_phn" />-->
-
-<!--                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Hubungi Kami" />-->
-<!--            </LinearLayout>-->
-
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="55dp"-->
-<!--                android:layout_gravity="center_vertical"-->
-<!--                android:layout_weight="1"-->
-<!--                android:gravity="center"-->
-<!--                android:orientation="vertical">-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="20dp"-->
-<!--                    android:layout_height="20dp"-->
-<!--                    app:srcCompat="@drawable/ic_user" />-->
-
-<!--                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Akun" />-->
-
-<!--            </LinearLayout>-->
-
-<!--        </LinearLayout>-->
-
-<!--    </FrameLayout>-->
 
 </RelativeLayout>
