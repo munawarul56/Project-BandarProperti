@@ -38,12 +38,19 @@
                 android:textColor="#000"
                 android:textSize="14dp" />
 
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginRight="15dp"
-                app:srcCompat="@drawable/ic_love"
-                tools:ignore="VectorDrawableCompat" />
+
+
+            <com.like.LikeButton
+                app:icon_type="heart"
+                app:icon_size="20dp"
+                app:like_drawable="@drawable/ic_love_fill_yellow"
+                app:unlike_drawable="@drawable/ic_love_border_yellow"
+                android:id="@+id/heart_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"/>
+
+
         </LinearLayout>
 
         <com.bandarproperti.customfonts.MyTextView_Roboto_Regular

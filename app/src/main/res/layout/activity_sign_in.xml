@@ -7,10 +7,18 @@
     android:orientation="vertical"
     tools:context=".SignInActivity">
 
+
+    <com.scwang.wave.MultiWaveHeader
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/wave"
+        app:mwhStartColor="@color/bandarcolour"
+        app:mwhCloseColor="@color/bandarcolour2"/>
+
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
         app:srcCompat="@drawable/logo_bp" />
 
