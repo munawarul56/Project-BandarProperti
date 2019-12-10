@@ -1,11 +1,16 @@
 package com.bandarproperti;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -23,11 +28,14 @@ import com.bandarproperti.ModelClasses.PropertyImageModel;
 
 public class PropertyDetailsActivity extends AppCompatActivity implements OnMapReadyCallback{
     ViewPager viewPager;
+
+    private final static String TAG ="CALL";
+    int request_code = 1;
+
     int images[] = {R.drawable.property,R.drawable.property,R.drawable.property,R.drawable.property};
     MyCustomPagerAdapter myCustomPagerAdapter;
 
     private TextView imageNo;
-
 
 
 //
@@ -43,7 +51,33 @@ public class PropertyDetailsActivity extends AppCompatActivity implements OnMapR
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_property_details);
 
-        viewPager = (ViewPager)findViewById(R.id.viewpager);
+        ImageButton btnChat = findViewById(R.id.btnChat);
+        ImageButton btnCall = findViewById(R.id.btnCall);
+
+
+        btnChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentChat = new Intent();
+                intentChat.setAction(Intent.ACTION_VIEW);
+                intentChat.addCategory(Intent.CATEGORY_BROWSABLE);
+                intentChat.setData(Uri.parse("https://wa.me/6282273713871"));
+                startActivity(intentChat);
+            }
+            });
+
+
+        btnCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentCall = new Intent();
+                intentCall.setAction(Intent.ACTION_DIAL);
+                intentCall.setData(Uri.parse("tel:082273713871"));
+                startActivity(intentCall);
+            }
+        });
+
+        viewPager = findViewById(R.id.viewpager);
         imageNo = (TextView)findViewById(R.id.imageNo);
 
         myCustomPagerAdapter = new MyCustomPagerAdapter(PropertyDetailsActivity.this, images);

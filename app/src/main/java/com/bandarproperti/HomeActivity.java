@@ -59,10 +59,6 @@ public class HomeActivity extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
 
-                    case R.id.hubungikami:
-                        startActivity(new Intent(getApplicationContext(),HubungiKamiActivity.class));
-                        overridePendingTransition(0,0);
-                        return true;
 
                     case R.id.akun:
                         startActivity(new Intent(getApplicationContext(),AkunActivity.class));

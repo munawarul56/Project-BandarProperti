@@ -2,13 +2,16 @@
 <android.support.v7.widget.Toolbar
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <ImageView
         android:layout_width="14dp"
         android:layout_height="14dp"
-        app:srcCompat="@drawable/ic_left_arrow" />
+        android:onClick="back"
+        app:srcCompat="@drawable/ic_left_arrow"
+        tools:ignore="OnClick" />
 
     <ImageView
         android:layout_width="16dp"

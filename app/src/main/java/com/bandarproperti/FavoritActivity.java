@@ -34,10 +34,6 @@ public class FavoritActivity extends AppCompatActivity {
                     case R.id.favorit:
                         return true;
 
-                    case R.id.hubungikami:
-                        startActivity(new Intent(getApplicationContext(),HubungiKamiActivity.class));
-                        overridePendingTransition(0,0);
-                        return true;
 
                     case R.id.akun:
                         startActivity(new Intent(getApplicationContext(),AkunActivity.class));

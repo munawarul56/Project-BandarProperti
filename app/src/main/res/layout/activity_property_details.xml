@@ -10,6 +10,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
+
     <include layout="@layout/toolbar_property" />
 
         <ScrollView
@@ -26,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -487,164 +489,56 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/subText"
-                        android:text="0813-6019-5804"
-                        />
+                        android:text="0813-6019-5804"/>
+
                 </LinearLayout>
-                <ImageView
+
+
+                <ImageButton
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    app:srcCompat="@drawable/ic_message"
-                    android:layout_gravity="center_vertical"/>
-                <ImageView
+                    android:id="@+id/btnChat"
+                    android:background="@drawable/ic_message"
+                    android:onClick=""
+                    android:layout_gravity="center_vertical"
+                    tools:ignore="OnClick" />
+
+                <ImageButton
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    app:srcCompat="@drawable/ic_phone"
+                    android:id="@+id/btnCall"
+                    android:onClick=""
+                    android:background="@drawable/ic_phone"
                     android:layout_marginRight="30dp"
                     android:layout_marginLeft="30dp"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    tools:ignore="OnClick" />
+
+<!--                <ImageView-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="25dp"-->
+<!--                    app:srcCompat="@drawable/ic_message"-->
+<!--                    android:onClick=""-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    tools:ignore="OnClick" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="25dp"-->
+<!--                    android:onClick=""-->
+<!--                    app:srcCompat="@drawable/ic_phone"-->
+<!--                    android:layout_marginRight="30dp"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    tools:ignore="OnClick" />-->
+
             </LinearLayout>
-            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#ffffff"
-                android:text="Send Enquiry"
-                android:background="@drawable/send_inq_rect"
-                android:gravity="center"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp"/>
+
         </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="#fff"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="55dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:layout_gravity="center_vertical"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                app:srcCompat="@drawable/ic_blue_home"/>
-
-            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#2ebcff"
-                android:text="Beranda"
-                android:layout_marginTop="3dp"
-                android:textSize="10dp"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="55dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:layout_gravity="center_vertical"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                app:srcCompat="@drawable/ic_catalogue_1"/>
-
-            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Favorit"
-                android:layout_marginTop="3dp"
-                android:textSize="10dp"/>
-        </LinearLayout>
-
-
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="55dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:layout_gravity="center_vertical"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                app:srcCompat="@drawable/ic_home_phn"/>
-
-            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hubungi Kami"
-                android:textSize="10dp"
-                android:layout_marginTop="3dp"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="55dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:layout_gravity="center_vertical"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                app:srcCompat="@drawable/ic_user"/>
-
-            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Akun"
-                android:textSize="10dp"
-                android:layout_marginTop="3dp"/>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:orientation="horizontal">-->
-
-<!--        <View-->
-<!--            android:layout_weight="1"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="0.5dp"-->
-<!--            android:layout_marginRight="26dp"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:background="#acacac"/>-->
-
-<!--            <View-->
-<!--                android:layout_weight="1"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="0.5dp"-->
-<!--                android:layout_marginLeft="20dp"-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                android:background="#acacac"/>-->
-
-<!--        </LinearLayout>-->
-
-
-    </FrameLayout>
 
 </RelativeLayout>
