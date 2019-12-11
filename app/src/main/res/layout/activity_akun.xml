@@ -7,125 +7,101 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".AkunActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <LinearLayout
+            android:background="@color/bandarcolour"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_logo_bandar_properti_orange"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Fikri Kurniawan Lubis"
+                android:textColor="#fff"
+                android:textSize="21sp"
+                android:textStyle="bold" />
 
-   <android.support.v7.widget.CardView
-       android:layout_width="410dp"
-       android:layout_height="200dp"
-       card_view:cardBackgroundColor="#FFAB00">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:text="Edit Profil"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="320dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_email"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="fikrikurniawan1176@gmail.com"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_phone_black"/>
+            <TextView
+                android:textStyle="bold"
 
-       <ImageView
-           android:layout_width="120dp"
-           android:layout_height="120dp"
-           app:srcCompat="@drawable/atm"
-           android:layout_marginTop="30dp"
-           android:layout_marginLeft="125dp"
-           android:id="@+id/fotoprofil"
-           >
-       </ImageView>
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="0822 9406 4496"/>
+        </LinearLayout>
 
-       <TextView
-           android:layout_width="200dp"
-           android:layout_height="30dp"
-           android:layout_marginLeft="100dp"
-           android:layout_marginTop="155dp"
-           android:id="@+id/namaprofil"
-           android:textColor="#000"
-           android:textSize="20dp"
-           android:text="Furqan A'la Maududy">
-
-       </TextView>
-
-
-
-   </android.support.v7.widget.CardView>
-
-
-
-
-    <android.support.v7.widget.CardView
-        android:layout_width="420dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="220dp">
-
-
-        <TextView
-            android:layout_width="60dp"
-            android:layout_height="30dp"
-            android:text="Alamat :"
-            android:textColor="#000"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            >
-
-
-        </TextView>
-
-        <TextView
-            android:layout_width="60dp"
-            android:layout_height="30dp"
-            android:text="No Hp :"
-            android:textColor="#000"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="60dp"
-            >
-
-
-        </TextView>
-
-
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:id="@+id/alamatprofil"
-            android:text=""
-            android:textColor="#000"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="10dp"
-            >
-
-
-        </TextView>
-
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:id="@+id/nohpprofil"
-            android:text=""
-
-            android:textColor="#000"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="60dp"
-            >
-
-
-        </TextView>
-
-    </android.support.v7.widget.CardView>
-
-
-
-
-    <Button
-        android:layout_width="425dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="400dp"
-        android:id="@+id/keluar"
-        android:background="@color/bandarcolour2"
-        android:text="KELUAR"
-        android:textColor="#000">
-
-    </Button>
-
-
-
-
-
-
-
-
-
-
+        <com.bandarproperti.customfonts.MyTextView_Roboto_Medium
+            android:id="@+id/btnKeluar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_react_color"
+            android:gravity="center_horizontal"
+            android:paddingBottom="12dp"
+            android:paddingLeft="90dp"
+            android:paddingRight="90dp"
+            android:paddingTop="12dp"
+            android:text="Keluar"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -134,6 +110,7 @@
         android:background="#ffff"
         android:orientation="horizontal"
         android:layout_alignParentBottom="true">
+
 
         <android.support.design.widget.BottomNavigationView
             android:layout_width="match_parent"
@@ -144,7 +121,6 @@
             app:itemIconTint="@drawable/selector"
             app:menu="@menu/menu_navigation"
             android:layout_alignParentBottom="true"/>
-
     </LinearLayout>
 
 
