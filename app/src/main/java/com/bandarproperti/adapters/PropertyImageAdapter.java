@@ -1,4 +1,4 @@
-package com.bandarproperti.Adapters;
+package com.bandarproperti.adapters;
 
 import android.content.Context;
 import android.os.Build;
@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import com.bandarproperti.ModelClasses.PropertyImageModel;
+import com.bandarproperti.models.PropertyImageModel;
 import com.bandarproperti.R;
 
 

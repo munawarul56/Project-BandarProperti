@@ -1,4 +1,4 @@
-package com.bandarproperti.ModelClasses;
+package com.bandarproperti.models;
 
 
 public class PropertyRecyclerModel {

@@ -15,8 +15,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import com.bandarproperti.Adapters.PropertyRecyclerAdapter;
-import com.bandarproperti.ModelClasses.PropertyRecyclerModel;
+import com.bandarproperti.adapters.PropertyRecyclerAdapter;
+import com.bandarproperti.models.PropertyRecyclerModel;
 
 public class HomeActivity extends AppCompatActivity {
 

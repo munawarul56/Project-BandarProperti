@@ -8,14 +8,14 @@ import android.widget.TextView;
 
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity1 extends AppCompatActivity {
 
     TextView btnSignIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main1);
 
 
         btnSignIn = findViewById(R.id.btnSignIn);
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent=new Intent(MainActivity.this,SignInActivity.class);
+                Intent intent=new Intent(MainActivity1.this,SignInActivity.class);
                 startActivity(intent);
 
 

@@ -5,4 +5,8 @@
 Lokasi Desa Kalut, Aceh Besar. 500m dari Jalan Soekarno-Hatta, pertengahan antara Simpang Lambaro dan Gedung Wali Nanggroe.
 
 Berada dikawasan berkembang dan sangat prospektif dan bernilai investasi tinggi. Lokasi sejuk dengan view pegunungan, bebas banjir dan bebas macet. Hanya 7-10 menit dari pusat Kota Banda Aceh.</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
