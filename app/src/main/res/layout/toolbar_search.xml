@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
         <variable
@@ -7,11 +8,20 @@
             type="android.widget.LinearLayout" />
     </data>
 
-    <LinearLayout
+    <android.support.v7.widget.Toolbar
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
         android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/toolbar_back"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_left_arrow_dark"
+            tools:ignore="OnClick" />
 
         <LinearLayout
             android:id="@+id/searchLayout"
@@ -20,7 +30,7 @@
             android:layout_gravity="center_vertical"
             android:orientation="horizontal"
             android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="30dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:background="@drawable/search_rect"
@@ -54,5 +64,5 @@
                 android:focusable="true"
                 android:visibility="gone"/>
         </LinearLayout>
-    </LinearLayout>
+    </android.support.v7.widget.Toolbar>
 </layout>

@@ -7,13 +7,16 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".AkunActivity">
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="wrap_content">
+
         <LinearLayout
             android:background="@color/bandarcolour"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
             android:orientation="vertical">
             <ImageView
                 android:layout_marginTop="45dp"

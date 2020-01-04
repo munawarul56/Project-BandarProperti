@@ -46,7 +46,9 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAq0LRjY-WEAKoQ4mPhFOeu4S_9Cte1-M0" /> <!-- Required to show current location -->
-        <activity android:name=".SignInActivity" />
+        <activity
+            android:name=".SignInActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".HomeActivity" />
         <activity
             android:name=".activity.PropertyDetailsActivity"

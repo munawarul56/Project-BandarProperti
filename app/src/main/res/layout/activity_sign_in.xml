@@ -7,22 +7,19 @@
     android:orientation="vertical"
     tools:context=".SignInActivity">
 
-
     <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/waveHeader"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:id="@+id/waveHeader"
-        app:mwhStartColor="@color/wavecolor"
-        app:mwhCloseColor="@color/wavecolor"/>
-
+        app:mwhCloseColor="@color/wavecolor"
+        app:mwhStartColor="@color/wavecolor" />
 
     <ImageView
         android:layout_width="170dp"
         android:layout_height="180dp"
-        android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
         app:srcCompat="@drawable/logo_bp" />
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -38,16 +35,16 @@
             android:orientation="horizontal"
             android:padding="10dp">
 
-                <com.bandarproperti.customfonts.EditText_Roboto_Regular
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:hint="User Name"
-                    android:layout_weight="1"
-                    android:inputType="text"
-                    android:textColor="#000"
-                    android:background="#00000000"
-                    android:textColorHint="#A2A2A2"
-                    android:textSize="12dp" />
+            <com.bandarproperti.customfonts.EditText_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:hint="User Name"
+                android:inputType="text"
+                android:textColor="#000"
+                android:textColorHint="#A2A2A2"
+                android:textSize="12dp" />
 
             <ImageView
                 android:layout_width="18dp"
@@ -71,16 +68,16 @@
             android:orientation="horizontal"
             android:padding="10dp">
 
-                <com.bandarproperti.customfonts.EditText_Roboto_Regular
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:hint="Password"
-                    android:inputType="textPassword"
-                    android:textColor="#000"
-                    android:layout_weight="1"
-                    android:background="#00000000"
-                    android:textColorHint="#A2A2A2"
-                    android:textSize="12dp" />
+            <com.bandarproperti.customfonts.EditText_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#000"
+                android:textColorHint="#A2A2A2"
+                android:textSize="12dp" />
 
             <ImageView
                 android:layout_width="18dp"
@@ -89,14 +86,12 @@
 
         </LinearLayout>
 
-
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"
             android:background="#acacac" />
-
 
         <com.bandarproperti.customfonts.MyTextView_Roboto_Medium
             android:id="@+id/btnSignIn"
@@ -106,23 +101,49 @@
             android:layout_marginTop="60dp"
             android:background="@drawable/button_react_color"
             android:gravity="center_horizontal"
-            android:paddingBottom="12dp"
             android:paddingLeft="90dp"
-            android:paddingRight="90dp"
             android:paddingTop="12dp"
+            android:paddingRight="90dp"
+            android:paddingBottom="12dp"
             android:text="Masuk"
             android:textColor="#ffffff"
             android:textSize="16dp" />
 
+        <LinearLayout
+            android:id="@+id/Linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="28.1dp"
+            android:layout_marginBottom="28.1dp"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true">
+
+            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum memiliki akun?"
+                android:textSize="14.4sp"
+                android:textColor="@color/mainText"/>
+
+            <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
+                android:id="@+id/loginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar"
+                android:layout_marginLeft="5dp"
+                android:textSize="14.4sp"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
     </LinearLayout>
 
     <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/waveFooter"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:id="@+id/waveFooter"
-        android:scaleY="-1"
         android:layout_marginTop="70dp"
-        app:mwhStartColor="@color/bandarcolour"
-        app:mwhCloseColor="@color/bandarcolour2"/>
+        android:scaleY="-1"
+        app:mwhCloseColor="@color/bandarcolour2"
+        app:mwhStartColor="@color/bandarcolour" />
 
 </LinearLayout>

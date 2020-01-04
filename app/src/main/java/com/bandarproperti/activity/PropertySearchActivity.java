@@ -82,6 +82,10 @@ public class PropertySearchActivity extends BaseActivity {
             details.putExtra("id", id.getText().toString().trim());
             startActivity(details);
         }));
+
+        searchBinding.toolbar.toolbarBack.setOnClickListener(view -> {
+            onBackPressed();
+        });
     }
 
     private void searchProperty(String query)

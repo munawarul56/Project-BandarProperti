@@ -75,7 +75,6 @@ public class MainActivity extends BaseActivity {
             }
             return false;
         }
-
     };
 
     public void homeFragment() {

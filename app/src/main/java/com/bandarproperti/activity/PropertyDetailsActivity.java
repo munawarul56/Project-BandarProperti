@@ -61,6 +61,18 @@ public class PropertyDetailsActivity extends BaseActivity implements OnMapReadyC
             onBackPressed();
         });
 
+        activityBinding.toolbar.toolbarFavoritBtn.setOnClickListener(view -> {
+            if (preference.isLoggedIn())
+            {
+
+            }
+            else
+            {
+                activityBinding.toolbar.toolbarFavoritBtn.setLiked(false);
+                messageDialogUtils.showRequiredLoginDialog(PropertyDetailsActivity.this);
+            }
+        });
+
         activityBinding.btnChat.setOnClickListener(view -> {
             Intent intentChat = new Intent();
             intentChat.setAction(Intent.ACTION_VIEW);

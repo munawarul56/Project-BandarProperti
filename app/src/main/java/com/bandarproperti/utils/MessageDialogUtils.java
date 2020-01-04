@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.bandarproperti.R;
+import com.bandarproperti.SignInActivity;
 import com.bandarproperti.config.Constants;
 
 /**
@@ -224,14 +225,33 @@ public class MessageDialogUtils {
         TextView messageText = (TextView) promptView.findViewById(R.id.message);
         messageText.setText(message);
 
-        alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                dialogInterface.dismiss();
-            }
-        });
+        alertDialogBuilder.setPositiveButton("OK", (dialogInterface, i) -> dialogInterface.dismiss());
 
         AlertDialog alert = alertDialogBuilder.create();
+        alert.show();
+    }
+
+    public void showRequiredLoginDialog(final Context context){
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        View promptView = layoutInflater.inflate(R.layout.login_dialogbox, null);
+        final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
+        alertDialogBuilder.setView(promptView);
+        alertDialogBuilder.setCancelable(false);
+
+        Button buttonOK = (Button) promptView.findViewById(R.id.btnLogin);
+        Button buttonCancel = (Button) promptView.findViewById(R.id.btnCancel);
+
+        final AlertDialog alert = alertDialogBuilder.create();
+
+        buttonOK.setOnClickListener(view -> {
+            alert.dismiss();
+            context.startActivity(new Intent(context, SignInActivity.class));
+        });
+
+        buttonCancel.setOnClickListener(view -> {
+            alert.dismiss();
+        });
+
         alert.show();
     }
 }

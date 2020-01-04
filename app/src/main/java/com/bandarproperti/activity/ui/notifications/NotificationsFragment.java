@@ -1,5 +1,7 @@
 package com.bandarproperti.activity.ui.notifications;
 
+import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,15 +14,26 @@ import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 
 import com.bandarproperti.R;
+import com.bandarproperti.SignInActivity;
+import com.bandarproperti.databinding.FragmentNotificationBinding;
 
 public class NotificationsFragment extends Fragment {
 
-    private NotificationsViewModel notificationsViewModel;
+    private FragmentNotificationBinding notificationBinding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_notifications, container, false);
+        notificationBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_notifications, container, false);
 
-        return root;
+        notificationBinding.loginBtn.setOnClickListener(view -> {
+            startActivity(new Intent(getActivity(), SignInActivity.class));
+        });
+
+        return notificationBinding.getRoot();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
     }
 }
