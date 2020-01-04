@@ -10,4 +10,5 @@
     <color name="wavecolor">#FFAB00</color>
     <color name="customcolor">#FFB758</color>
     <color name="customcolor2">#9E9D9D</color>
+    <color name="placeholder_bg">#dddddd</color>
 </resources>

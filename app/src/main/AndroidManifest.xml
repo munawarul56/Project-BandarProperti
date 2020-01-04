@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permision.CALL_PHONE" />
 
     <application
+        android:name=".MyApp"
         android:allowBackup="true"
         android:appComponentFactory="whateverString"
         android:hardwareAccelerated="false"
@@ -21,7 +22,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:appComponentFactory">
-        <activity android:name=".activity.SplashActivity"
+        <activity
+            android:name=".activity.PropertySearchActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,8 +34,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.MainActivity">
-        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".AkunActivity" />
         <activity android:name=".FavoritActivity" />
 
@@ -42,10 +48,12 @@
             android:value="AIzaSyAq0LRjY-WEAKoQ4mPhFOeu4S_9Cte1-M0" /> <!-- Required to show current location -->
         <activity android:name=".SignInActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".PropertyDetailsActivity" />
+        <activity
+            android:name=".activity.PropertyDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".MainActivity1"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

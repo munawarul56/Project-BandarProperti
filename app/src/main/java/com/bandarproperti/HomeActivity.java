@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import com.bandarproperti.activity.PropertyDetailsActivity;
 import com.bandarproperti.adapters.PropertyRecyclerAdapter;
 import com.bandarproperti.models.PropertyRecyclerModel;
 
@@ -77,7 +78,7 @@ public class HomeActivity extends AppCompatActivity {
        refine.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-               Intent intent = new Intent(HomeActivity.this,PropertyDetailsActivity.class);
+               Intent intent = new Intent(HomeActivity.this, PropertyDetailsActivity.class);
                startActivity(intent);
            }
        });

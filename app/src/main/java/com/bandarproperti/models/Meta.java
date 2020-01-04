@@ -1,19 +1,34 @@
 package com.bandarproperti.models;
 
-class Pagination {
-    public int total;
-    public int count;
-    public int per_page;
-    public int current_page;
-    public int total_pages;
-    public Links links;
-}
-
 class Links {
     public String previous;
     public String next;
+
+    public String getPrevious() {
+        return previous;
+    }
+
+    public void setPrevious(String previous) {
+        this.previous = previous;
+    }
+
+    public String getNext() {
+        return next;
+    }
+
+    public void setNext(String next) {
+        this.next = next;
+    }
 }
 
 public class Meta {
     public Pagination pagination;
+
+    public Pagination getPagination() {
+        return pagination;
+    }
+
+    public void setPagination(Pagination pagination) {
+        this.pagination = pagination;
+    }
 }

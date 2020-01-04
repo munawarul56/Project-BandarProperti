@@ -22,4 +22,11 @@
     <dimen name="appbar_padding_top">8dp</dimen>
 
     <dimen name="margin">16dp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="padding_xmedium">11dp</dimen>
+
+    <dimen name="toolbar_text_size">20sp</dimen>
+    <dimen name="placeholderTextHeight">15dp</dimen>
+    <dimen name="placeholderTextWidth">100dp</dimen>
+    <dimen name="placeholderTextHeight2line">25dp</dimen>
 </resources>

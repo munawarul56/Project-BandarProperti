@@ -9,18 +9,22 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.bandarproperti.R;
+import com.bandarproperti.config.Constants;
+import com.bandarproperti.helper.MyHelper;
 
 
 public class MyCustomPagerAdapter extends PagerAdapter {
     Context context;
-    int images[];
+    String images[];
     LayoutInflater layoutInflater;
+    MyHelper myHelper;
 
-
-    public MyCustomPagerAdapter(Context context, int images[]) {
+    public MyCustomPagerAdapter(Context context, String images[]) {
         this.context = context;
         this.images = images;
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+        myHelper = new MyHelper();
     }
 
     @Override
@@ -38,8 +42,8 @@ public class MyCustomPagerAdapter extends PagerAdapter {
         View itemView = layoutInflater.inflate(R.layout.item, container, false);
 
         ImageView imageView = (ImageView) itemView.findViewById(R.id.imageView);
-        imageView.setImageResource(images[position]);
 
+        myHelper.loadImage(context, Constants.IMAGE_URL + images[position], imageView);
         container.addView(itemView);
 
         //listening to image click

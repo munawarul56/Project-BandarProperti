@@ -13,7 +13,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import com.bandarproperti.models.PropertyRecyclerModel;
-import com.bandarproperti.PropertyDetailsActivity;
+import com.bandarproperti.activity.PropertyDetailsActivity;
 import com.bandarproperti.R;
 
 
@@ -33,13 +33,13 @@ public class PropertyRecyclerAdapter  extends RecyclerView.Adapter<PropertyRecyc
             public MyViewHolder(View view) {
                 super(view);
 
-                propertyName=(TextView) view.findViewById(R.id.propertyName);
-                type=(TextView)view.findViewById(R.id.type);
-                street2=(TextView)view.findViewById(R.id.street2);
-                amount=(TextView) view.findViewById(R.id.amount);
-                bedCount=(TextView) view.findViewById(R.id.bedCount);
-                carParking=(TextView) view.findViewById(R.id.carParking);
-                swimmingpool=(TextView) view.findViewById(R.id.swimmingPool);
+//                propertyName=(TextView) view.findViewById(R.id.propertyName);
+//                type=(TextView)view.findViewById(R.id.type);
+//                street2=(TextView)view.findViewById(R.id.street2);
+//                amount=(TextView) view.findViewById(R.id.amount);
+//                bedCount=(TextView) view.findViewById(R.id.bedCount);
+//                carParking=(TextView) view.findViewById(R.id.carParking);
+//                swimmingpool=(TextView) view.findViewById(R.id.swimmingPool);
             }
 
         }
@@ -53,7 +53,7 @@ public class PropertyRecyclerAdapter  extends RecyclerView.Adapter<PropertyRecyc
         @Override
         public PropertyRecyclerAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View itemView = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.recycler_view, parent, false);
+                    .inflate(R.layout.property_item_view, parent, false);
 
 
             return new PropertyRecyclerAdapter.MyViewHolder(itemView);
