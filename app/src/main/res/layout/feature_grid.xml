@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bandarproperti.customfonts.MyTextView_Roboto_Regular
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/featureText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/facilities_rect"
+    android:paddingLeft="10dp"
+    android:paddingTop="7dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="7dp"
+    android:text="Air PDAM"/>

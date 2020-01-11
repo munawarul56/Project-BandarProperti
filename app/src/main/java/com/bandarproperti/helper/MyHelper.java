@@ -8,6 +8,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 
 import com.bandarproperti.R;
+import com.bandarproperti.models.Feature;
 import com.bandarproperti.models.Gallery;
 import com.squareup.picasso.Picasso;
 
@@ -60,6 +61,18 @@ public class MyHelper {
 
             // Assign each value to String array
             str[j] = arr.get(j).image;
+        }
+        return str;
+    }
+
+    public String[] GetStringFeatureArray(List<Feature> arr) {
+        String str[] = new String[arr.size()];
+
+        // ArrayList to Array Conversion
+        for (int j = 0; j < arr.size(); j++) {
+
+            // Assign each value to String array
+            str[j] = arr.get(j).name;
         }
         return str;
     }

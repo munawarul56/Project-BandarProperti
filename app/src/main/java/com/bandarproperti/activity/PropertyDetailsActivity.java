@@ -9,6 +9,7 @@ import android.text.Html;
 import android.view.View;
 
 import com.bandarproperti.R;
+import com.bandarproperti.adapters.FeatureGridAdapter;
 import com.bandarproperti.adapters.MyCustomPagerAdapter;
 import com.bandarproperti.databinding.ActivityPropertyDetailsBinding;
 import com.bandarproperti.models.Property;
@@ -31,6 +32,7 @@ public class PropertyDetailsActivity extends BaseActivity implements OnMapReadyC
     private Bundle bundle;
 
     String images[];
+    String feature[];
     Integer id;
     MyCustomPagerAdapter myCustomPagerAdapter;
 
@@ -111,6 +113,7 @@ public class PropertyDetailsActivity extends BaseActivity implements OnMapReadyC
                     Property property = response.body();
 
                     images = myHelper.GetStringGalleryArray(property.getGalleries());
+                    feature = myHelper.GetStringFeatureArray(property.getFeatures());
 
                     myCustomPagerAdapter = new MyCustomPagerAdapter(PropertyDetailsActivity.this, images);
                     activityBinding.sliderViewpager.setAdapter(myCustomPagerAdapter);
@@ -149,6 +152,8 @@ public class PropertyDetailsActivity extends BaseActivity implements OnMapReadyC
                     activityBinding.propertyCreated.setText(dateFormatHelper.dateTimeDayNowViewParser(property.getCreated_at()));
                     activityBinding.propertyYear.setText(property.getYear_build());
                     activityBinding.propertyDesc.setText(Html.fromHtml(property.getDesc()));
+
+                    activityBinding.featureGrid.setAdapter(new FeatureGridAdapter(PropertyDetailsActivity.this, feature));
 
                     activityBinding.scrollView.setVisibility(View.VISIBLE);
                 }
