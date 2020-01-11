@@ -28,7 +28,7 @@ public class FavoritActivity extends AppCompatActivity {
 
                     case R.id.beranda:
                         startActivity(new Intent(getApplicationContext(),HomeActivity.class));
-                        overridePendingTransition(0,0);
+//                        overridePendingTransition(0,0);
                         return true;
 
                     case R.id.favorit:
@@ -37,7 +37,7 @@ public class FavoritActivity extends AppCompatActivity {
 
                     case R.id.akun:
                         startActivity(new Intent(getApplicationContext(),AkunActivity.class));
-                        overridePendingTransition(0,0);
+//                        overridePendingTransition(0,0);
                         return true;
                 }
                 return false;

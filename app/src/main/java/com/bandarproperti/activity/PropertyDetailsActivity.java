@@ -84,7 +84,7 @@ public class PropertyDetailsActivity extends BaseActivity implements OnMapReadyC
             Intent intentChat = new Intent();
             intentChat.setAction(Intent.ACTION_VIEW);
             intentChat.addCategory(Intent.CATEGORY_BROWSABLE);
-            intentChat.setData(Uri.parse("https://wa.me/6282273713871"));
+            intentChat.setData(Uri.parse("https://wa.me/6281360195804"));
             startActivity(intentChat);
         });
 
@@ -92,7 +92,7 @@ public class PropertyDetailsActivity extends BaseActivity implements OnMapReadyC
         activityBinding.btnCall.setOnClickListener(view -> {
             Intent intentCall = new Intent();
             intentCall.setAction(Intent.ACTION_DIAL);
-            intentCall.setData(Uri.parse("tel:082273713871"));
+            intentCall.setData(Uri.parse("tel:081360195804"));
             startActivity(intentCall);
         });
     }

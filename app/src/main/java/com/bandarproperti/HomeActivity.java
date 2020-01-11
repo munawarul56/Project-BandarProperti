@@ -57,13 +57,13 @@ public class HomeActivity extends AppCompatActivity {
 
                     case R.id.favorit:
                         startActivity(new Intent(getApplicationContext(),FavoritActivity.class));
-                        overridePendingTransition(0,0);
+//                        overridePendingTransition(0,0);
                         return true;
 
 
                     case R.id.akun:
                         startActivity(new Intent(getApplicationContext(),AkunActivity.class));
-                        overridePendingTransition(0,0);
+//                        overridePendingTransition(0,0);
                         return true;
                 }
                 return false;
