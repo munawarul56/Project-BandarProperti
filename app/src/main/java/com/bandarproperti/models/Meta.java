@@ -1,7 +1,15 @@
 package com.bandarproperti.models;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 class Links {
+
+    @SerializedName("previous")
+    @Expose
     public String previous;
+    @SerializedName("next")
+    @Expose
     public String next;
 
     public String getPrevious() {
@@ -22,6 +30,9 @@ class Links {
 }
 
 public class Meta {
+
+    @SerializedName("pagination")
+    @Expose
     public Pagination pagination;
 
     public Pagination getPagination() {

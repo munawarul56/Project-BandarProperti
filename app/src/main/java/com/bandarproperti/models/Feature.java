@@ -1,10 +1,24 @@
 package com.bandarproperti.models;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class Feature {
+
+    @SerializedName("id")
+    @Expose
     public int id;
+    @SerializedName("property_id")
+    @Expose
     public int property_id;
+    @SerializedName("feature_id")
+    @Expose
     public int feature_id;
+    @SerializedName("name")
+    @Expose
     public String name;
+    @SerializedName("icon")
+    @Expose
     public String icon;
 
     public Feature() {

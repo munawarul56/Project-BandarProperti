@@ -1,11 +1,27 @@
 package com.bandarproperti.models;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class Pagination {
+
+    @SerializedName("total")
+    @Expose
     public int total;
+    @SerializedName("count")
+    @Expose
     public int count;
+    @SerializedName("per_page")
+    @Expose
     public int per_page;
+    @SerializedName("current_page")
+    @Expose
     public int current_page;
+    @SerializedName("total_pages")
+    @Expose
     public int total_pages;
+    @SerializedName("links")
+    @Expose
     public Links links;
 
     public int getTotal() {

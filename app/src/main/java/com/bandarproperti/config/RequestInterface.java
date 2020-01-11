@@ -2,6 +2,7 @@ package com.bandarproperti.config;
 
 import com.bandarproperti.models.Customer;
 import com.bandarproperti.models.Property;
+import com.bandarproperti.models.PropertyFavorite;
 import com.bandarproperti.response.CustomerResponse;
 import com.bandarproperti.response.PropertyApiResponse;
 import com.bandarproperti.response.PropertyApiSearchResponse;
@@ -46,6 +47,21 @@ public interface RequestInterface {
     @GET(Constants.BASE_URL + Constants.OperationString.PROPERTY_SEARCH_OPERATION)
     Call<PropertyApiSearchResponse> getPropertySearch(
             @Query("search") String query
+    );
+
+    @POST(Constants.BASE_URL + Constants.USER_URL + Constants.OperationString.ADD_PROPERTY_FAVORITE_OPERATION)
+    Call<Property> addPropertyToFavorite(
+            @Body PropertyFavorite favorite
+    );
+
+    @POST(Constants.BASE_URL + Constants.USER_URL + Constants.OperationString.PROPERTY_FAVORITES_OPERATION)
+    Call<PropertyResponse> getPropertyFavorites(
+            @Body PropertyFavorite favorite
+    );
+
+    @POST(Constants.BASE_URL + Constants.USER_URL + Constants.OperationString.PROPERTY_FAVORITE_OPERATION)
+    Call<Property> getPropertyFavorite(
+            @Body PropertyFavorite favorite
     );
 
 //    @POST("user/{operation}")

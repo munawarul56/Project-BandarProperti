@@ -21,13 +21,14 @@
         android:roundIcon="@mipmap/icon_logo_bandarproperti"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
         tools:replace="android:appComponentFactory">
         <activity
             android:name=".activity.PropertySearchActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".activity.SplashActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -47,7 +48,10 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAq0LRjY-WEAKoQ4mPhFOeu4S_9Cte1-M0" /> <!-- Required to show current location -->
         <activity
-            android:name=".SignInActivity"
+            android:name=".activity.SignInActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.SignUpActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".HomeActivity" />
         <activity

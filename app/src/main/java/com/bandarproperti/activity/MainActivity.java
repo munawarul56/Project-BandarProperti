@@ -37,12 +37,17 @@ public class MainActivity extends BaseActivity {
 //        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 //        NavigationUI.setupWithNavController(navView, navController);
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.nav_view);
+        BottomNavigationView navigation = findViewById(R.id.nav_view);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         mFragmentManager = getSupportFragmentManager();
 
         homeFragment();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -55,21 +60,18 @@ public class MainActivity extends BaseActivity {
                     mFragmentTransaction = mFragmentManager.beginTransaction();
                     mFragmentTransaction.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
                     mFragmentTransaction.replace(R.id.content, new HomeFragment());
-                    mFragmentTransaction.addToBackStack(null);
                     mFragmentTransaction.commit();
                     return true;
                 case R.id.navigation_dashboard:
                     mFragmentTransaction = mFragmentManager.beginTransaction();
                     mFragmentTransaction.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
                     mFragmentTransaction.replace(R.id.content, new DashboardFragment());
-                    mFragmentTransaction.addToBackStack(null);
                     mFragmentTransaction.commit();
                     return true;
                 case R.id.navigation_notifications:
                     mFragmentTransaction = mFragmentManager.beginTransaction();
                     mFragmentTransaction.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
                     mFragmentTransaction.replace(R.id.content, new NotificationsFragment());
-                    mFragmentTransaction.addToBackStack(null);
                     mFragmentTransaction.commit();
                     return true;
             }

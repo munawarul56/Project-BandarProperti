@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.bandarproperti.activity.SignInActivity;
 
 
 public class MainActivity1 extends AppCompatActivity {
@@ -24,7 +25,7 @@ public class MainActivity1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent=new Intent(MainActivity1.this,SignInActivity.class);
+                Intent intent=new Intent(MainActivity1.this, SignInActivity.class);
                 startActivity(intent);
 
 

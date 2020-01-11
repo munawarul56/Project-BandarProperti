@@ -13,7 +13,7 @@
             layout="@layout/toolbar_favorite" />
 
         <LinearLayout
-            android:id="@+id/emptyLayout"
+            android:id="@+id/loginLayout"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:gravity="center"
@@ -21,7 +21,8 @@
             app:layout_constraintTop_toBottomOf="@id/toolbar"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent">
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone">
 
             <ImageView
                 android:layout_width="100dp"
@@ -36,6 +37,31 @@
                 android:text="Silahkan login untuk melihat Properti favorit Anda."/>
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/emptyLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                app:srcCompat="@drawable/ic_empty_light"/>
+
+            <com.bandarproperti.customfonts.MyTextView_Roboto_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Belum ada Properti Favorit."/>
+        </LinearLayout>
+
         <android.support.v4.widget.SwipeRefreshLayout
             android:id="@+id/refreshLayout"
             android:layout_width="0dp"
@@ -44,13 +70,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:visibility="gone">
+            android:visibility="visible">
 
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:clipToPadding="false"
-                android:id="@+id/recyclerview"/>
+                android:id="@+id/recyclerview"
+                android:visibility="gone"/>
 
         </android.support.v4.widget.SwipeRefreshLayout>
 

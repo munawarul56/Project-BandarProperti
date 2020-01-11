@@ -28,7 +28,7 @@
                 android:id="@+id/shimmer_view_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:visibility="visible">
+                android:visibility="gone">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scrollbars="none"
-                android:visibility="gone">
+                android:visibility="visible">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -313,13 +313,36 @@
                                     android:textColor="@color/subText"
                                     android:textSize="11dp" />
 
-                                <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                                    android:id="@+id/propertySize"
+                                <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="159-204 m"
-                                    android:textColor="@color/mainText"
-                                    android:textSize="13dp" />
+                                    android:orientation="horizontal">
+
+                                    <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
+                                        android:id="@+id/propertySize"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="159-204 m"
+                                        android:textColor="@color/mainText"
+                                        android:textSize="13dp" />
+
+                                    <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="2dp"
+                                        android:text="/"
+                                        android:textColor="#A2A2A2"
+                                        android:textSize="11dp" />
+
+                                    <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
+                                        android:id="@+id/propertySizePostfix"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="2dp"
+                                        android:text="-"
+                                        android:textColor="#A2A2A2"
+                                        android:textSize="11dp" />
+                                </LinearLayout>
 
                                 <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                                     android:layout_width="wrap_content"

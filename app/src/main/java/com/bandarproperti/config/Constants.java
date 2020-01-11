@@ -6,9 +6,9 @@ package com.bandarproperti.config;
 
 public class Constants {
 
-    private static final String HOST_URL = "http://admin.bandarproperti.com/";
+    private static final String HOST_URL = "http://admin.bandar-properti.com/";
     public static final String BASE_URL = HOST_URL + "api/";
-    public static final String SLIDER_URL = "http://resto.inshaallahlulus.com/";
+    public static final String SLIDER_URL = "http://admin.bandar-properti.com/";
     public static final String IMAGE_URL = HOST_URL + "uploads/";
     public static final String USER_URL = "customer/";
 
@@ -48,6 +48,10 @@ public class Constants {
         public static final String PROPERTY_OPERATION = "properties";
         public static final String PROPERTY_DETAIL_OPERATION = "property/details";
         public static final String PROPERTY_SEARCH_OPERATION = "property/search";
+
+        public static final String ADD_PROPERTY_FAVORITE_OPERATION = "property/add-to-favorite";
+        public static final String PROPERTY_FAVORITES_OPERATION = "property/favorites";
+        public static final String PROPERTY_FAVORITE_OPERATION = "property/favorite";
     }
 
     public class TAG{

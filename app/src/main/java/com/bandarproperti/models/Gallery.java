@@ -1,8 +1,18 @@
 package com.bandarproperti.models;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class Gallery {
+
+    @SerializedName("id")
+    @Expose
     public int id;
+    @SerializedName("property_id")
+    @Expose
     public int property_id;
+    @SerializedName("image")
+    @Expose
     public String image;
 
     public Gallery() {

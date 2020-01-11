@@ -1,15 +1,36 @@
 package com.bandarproperti.models;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class Customer {
 
+    @SerializedName("id")
+    @Expose
     Integer id;
+    @SerializedName("email")
+    @Expose
     String email;
+    @SerializedName("name")
+    @Expose
     String name;
+    @SerializedName("password")
+    @Expose
     String password;
+    @SerializedName("phone")
+    @Expose
     String phone;
+    @SerializedName("gender")
+    @Expose
     String gender;
+    @SerializedName("picture")
+    @Expose
     String picture;
+    @SerializedName("address")
+    @Expose
     String address;
+    @SerializedName("created_at")
+    @Expose
     String created_at;
 
     public Customer() {

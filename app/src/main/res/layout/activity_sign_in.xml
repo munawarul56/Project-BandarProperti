@@ -1,30 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <android.support.constraint.ConstraintLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SignInActivity">
+    tools:context=".activity.SignInActivity">
 
     <com.scwang.wave.MultiWaveHeader
         android:id="@+id/waveHeader"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:mwhCloseColor="@color/wavecolor"
         app:mwhStartColor="@color/wavecolor" />
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="170dp"
-        android:layout_height="180dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_height="170dp"
+        app:layout_constraintTop_toBottomOf="@+id/waveHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/logo_bp" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/waveFooter"
         android:orientation="vertical">
 
         <LinearLayout
@@ -36,11 +49,12 @@
             android:padding="10dp">
 
             <com.bandarproperti.customfonts.EditText_Roboto_Regular
+                android:id="@+id/customerEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#00000000"
-                android:hint="User Name"
+                android:hint="Email"
                 android:inputType="text"
                 android:textColor="#000"
                 android:textColorHint="#A2A2A2"
@@ -49,7 +63,7 @@
             <ImageView
                 android:layout_width="18dp"
                 android:layout_height="18dp"
-                app:srcCompat="@drawable/ic_user" />
+                app:srcCompat="@drawable/ic_user_light" />
 
         </LinearLayout>
 
@@ -69,6 +83,7 @@
             android:padding="10dp">
 
             <com.bandarproperti.customfonts.EditText_Roboto_Regular
+                android:id="@+id/customerPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -82,7 +97,7 @@
             <ImageView
                 android:layout_width="18dp"
                 android:layout_height="18dp"
-                app:srcCompat="@drawable/ic_eye" />
+                app:srcCompat="@drawable/ic_password_light" />
 
         </LinearLayout>
 
@@ -94,11 +109,11 @@
             android:background="#acacac" />
 
         <com.bandarproperti.customfonts.MyTextView_Roboto_Medium
-            android:id="@+id/btnSignIn"
+            android:id="@+id/customerLoginBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/button_react_color"
             android:gravity="center_horizontal"
             android:paddingLeft="90dp"
@@ -114,8 +129,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="28.1dp"
-            android:layout_marginBottom="28.1dp"
+            android:layout_marginTop="18.1dp"
             android:gravity="center_horizontal"
             android:layout_alignParentBottom="true">
 
@@ -127,7 +141,7 @@
                 android:textColor="@color/mainText"/>
 
             <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
-                android:id="@+id/loginBtn"
+                android:id="@+id/customerRegisterBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Daftar"
@@ -141,9 +155,12 @@
         android:id="@+id/waveFooter"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:scaleY="-1"
         app:mwhCloseColor="@color/bandarcolour2"
         app:mwhStartColor="@color/bandarcolour" />
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
+</layout>

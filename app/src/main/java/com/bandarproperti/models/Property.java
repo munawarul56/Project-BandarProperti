@@ -1,41 +1,96 @@
 package com.bandarproperti.models;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 class City {
+
+    @SerializedName("village")
+    @Expose
     public String village;
+    @SerializedName("district")
+    @Expose
     public String district;
+    @SerializedName("regency")
+    @Expose
     public String regency;
+    @SerializedName("province")
+    @Expose
     public String provinnce;
 }
 
 public class Property{
+
+    @SerializedName("id")
+    @Expose
     public int id;
+    @SerializedName("name")
+    @Expose
     public String name;
+    @SerializedName("desc")
+    @Expose
     public String desc;
+    @SerializedName("status")
+    @Expose
     public String status;
+    @SerializedName("type")
+    @Expose
     public String type;
+    @SerializedName("city")
+    @Expose
     public City city;
+    @SerializedName("price")
+    @Expose
     public int price;
+    @SerializedName("price_postfix")
+    @Expose
     public String price_postfix;
-    public int area_size;
+    @SerializedName("area_size")
+    @Expose
+    public String area_size;
+    @SerializedName("size_postfix")
+    @Expose
     public String size_postfix;
+    @SerializedName("bedrooms")
+    @Expose
     public int bedrooms;
+    @SerializedName("bathrooms")
+    @Expose
     public int bathrooms;
+    @SerializedName("gerages")
+    @Expose
     public int gerages;
+    @SerializedName("year_build")
+    @Expose
     public String year_build;
+    @SerializedName("address")
+    @Expose
     public String address;
+    @SerializedName("lat")
+    @Expose
     public String lat;
+    @SerializedName("lnt")
+    @Expose
     public String lng;
+    @SerializedName("image")
+    @Expose
     public String image;
+    @SerializedName("created_at")
+    @Expose
     public String created_at;
+    @SerializedName("features")
+    @Expose
     public List<Feature> features;
+    @SerializedName("galleries")
+    @Expose
     public List<Gallery> galleries;
 
     public Property() {
     }
 
-    public Property(int id, String name, String desc, String status, String type, City city, int price, String price_postfix, int area_size, String size_postfix, int bedrooms, int bathrooms, int gerages, String year_build, String address, String lat, String lng, String image, String created_at, List<Feature> features, List<Gallery> galleries) {
+    public Property(int id, String name, String desc, String status, String type, City city, int price, String price_postfix, String area_size, String size_postfix, int bedrooms, int bathrooms, int gerages, String year_build, String address, String lat, String lng, String image, String created_at, List<Feature> features, List<Gallery> galleries) {
         this.id = id;
         this.name = name;
         this.desc = desc;
@@ -123,11 +178,11 @@ public class Property{
         this.price_postfix = price_postfix;
     }
 
-    public int getArea_size() {
+    public String getArea_size() {
         return area_size;
     }
 
-    public void setArea_size(int area_size) {
+    public void setArea_size(String area_size) {
         this.area_size = area_size;
     }
 

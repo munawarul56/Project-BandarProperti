@@ -12,6 +12,7 @@ import com.bandarproperti.R;
 import com.bandarproperti.adapters.MyCustomPagerAdapter;
 import com.bandarproperti.databinding.ActivityPropertyDetailsBinding;
 import com.bandarproperti.models.Property;
+import com.bandarproperti.models.PropertyFavorite;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -30,6 +31,7 @@ public class PropertyDetailsActivity extends BaseActivity implements OnMapReadyC
     private Bundle bundle;
 
     String images[];
+    Integer id;
     MyCustomPagerAdapter myCustomPagerAdapter;
 
     @Override
@@ -39,7 +41,10 @@ public class PropertyDetailsActivity extends BaseActivity implements OnMapReadyC
 
         bundle = getIntent().getExtras();
 
+        id = Integer.parseInt(bundle.getString("id"));
+
         initData();
+        getFavorite();
         btnAction();
     }
 
@@ -64,7 +69,7 @@ public class PropertyDetailsActivity extends BaseActivity implements OnMapReadyC
         activityBinding.toolbar.toolbarFavoritBtn.setOnClickListener(view -> {
             if (preference.isLoggedIn())
             {
-
+                addToFavorite();
             }
             else
             {
@@ -92,7 +97,6 @@ public class PropertyDetailsActivity extends BaseActivity implements OnMapReadyC
 
     public void initData()
     {
-        Integer id = Integer.parseInt(bundle.getString("id"));
         activityBinding.shimmerViewContainer.setVisibility(View.VISIBLE);
 
         Call<Property> propertyCall = requestInterface.getPropertyDetail(id);
@@ -141,6 +145,7 @@ public class PropertyDetailsActivity extends BaseActivity implements OnMapReadyC
                     activityBinding.propertyGerage.setText(String.valueOf(property.getGerages()));
                     activityBinding.propertyType.setText(property.getType());
                     activityBinding.propertySize.setText(String.valueOf(property.getArea_size()));
+                    activityBinding.propertySizePostfix.setText(property.getSize_postfix());
                     activityBinding.propertyCreated.setText(dateFormatHelper.dateTimeDayNowViewParser(property.getCreated_at()));
                     activityBinding.propertyYear.setText(property.getYear_build());
                     activityBinding.propertyDesc.setText(Html.fromHtml(property.getDesc()));
@@ -156,6 +161,71 @@ public class PropertyDetailsActivity extends BaseActivity implements OnMapReadyC
             @Override
             public void onFailure(Call<Property> call, Throwable t) {
                 showToast(t.getLocalizedMessage());
+            }
+        });
+    }
+
+    public void addToFavorite()
+    {
+        PropertyFavorite favorite = new PropertyFavorite();
+        favorite.setCustomer_id(preference.getUserId());
+        favorite.setProperty_id(id);
+
+        Call<Property> propertyCall = requestInterface.addPropertyToFavorite(favorite);
+        propertyCall.enqueue(new Callback<Property>() {
+            @Override
+            public void onResponse(Call<Property> call, Response<Property> response) {
+                if(response.code() == 200)
+                {
+                    activityBinding.toolbar.toolbarFavoritBtn.setLiked(true);
+                    showToast("Berhasil tambah ke favorit");
+                }
+                else if(response.code() == 201)
+                {
+                    activityBinding.toolbar.toolbarFavoritBtn.setLiked(false);
+                    showToast("Berhasil hapus favorit");
+                }
+                else
+                {
+                    activityBinding.toolbar.toolbarFavoritBtn.setLiked(false);
+                    showToast("Gagal tambah ke favorit, coba lagi");
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Property> call, Throwable t) {
+                activityBinding.toolbar.toolbarFavoritBtn.setLiked(false);
+                showToast("Gagal terkoneksi ke server, coba lagi");
+            }
+        });
+    }
+
+    public void getFavorite()
+    {
+        PropertyFavorite favorite = new PropertyFavorite();
+        favorite.setCustomer_id(preference.getUserId());
+        favorite.setProperty_id(id);
+
+        Call<Property> propertyCall = requestInterface.getPropertyFavorite(favorite);
+        propertyCall.enqueue(new Callback<Property>() {
+            @Override
+            public void onResponse(Call<Property> call, Response<Property> response) {
+                if(response.isSuccessful())
+                {
+                    if(id == response.body().getId())
+                    {
+                        activityBinding.toolbar.toolbarFavoritBtn.setLiked(true);
+                    }
+                    else
+                    {
+                        activityBinding.toolbar.toolbarFavoritBtn.setLiked(false);
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Property> call, Throwable t) {
+                showToast("Gagal terkoneksi ke server, coba lagi");
             }
         });
     }

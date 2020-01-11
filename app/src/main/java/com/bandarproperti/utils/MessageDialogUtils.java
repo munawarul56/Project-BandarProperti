@@ -15,7 +15,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.bandarproperti.R;
-import com.bandarproperti.SignInActivity;
+import com.bandarproperti.activity.SignInActivity;
 import com.bandarproperti.config.Constants;
 
 /**
