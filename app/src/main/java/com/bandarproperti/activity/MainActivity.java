@@ -58,19 +58,16 @@ public class MainActivity extends BaseActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
                     mFragmentTransaction = mFragmentManager.beginTransaction();
-                    mFragmentTransaction.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
                     mFragmentTransaction.replace(R.id.content, new HomeFragment());
                     mFragmentTransaction.commit();
                     return true;
                 case R.id.navigation_dashboard:
                     mFragmentTransaction = mFragmentManager.beginTransaction();
-                    mFragmentTransaction.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
                     mFragmentTransaction.replace(R.id.content, new DashboardFragment());
                     mFragmentTransaction.commit();
                     return true;
                 case R.id.navigation_notifications:
                     mFragmentTransaction = mFragmentManager.beginTransaction();
-                    mFragmentTransaction.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
                     mFragmentTransaction.replace(R.id.content, new NotificationsFragment());
                     mFragmentTransaction.commit();
                     return true;
