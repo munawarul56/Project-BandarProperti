@@ -22,28 +22,25 @@
             app:layout_constraintBottom_toBottomOf="parent">
 
             <LinearLayout
-                android:background="@color/bandarcolour"
+                android:background="#ffff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:orientation="vertical">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_marginTop="45dp"
                     android:layout_gravity="center_horizontal"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/ic_logo_bandar_properti_orange"/>
+                    android:id="@+id/profile_image"
+                    android:src="@drawable/profil1"
+                    app:civ_border_color="#fff"
+                    app:civ_border_width="2dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp" />
 
-                <com.bandarproperti.customfonts.MyTextView_Roboto_Medium
-                    android:id="@+id/accountEmail"
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    android:text="-"
-                    android:textColor="#fff"
-                    android:textSize="21sp"/>
+
 
                 <com.bandarproperti.customfonts.MyTextView_Roboto_Medium
                     android:id="@+id/accountName"
@@ -52,8 +49,9 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
                     android:text="-"
-                    android:textColor="#fff"
-                    android:textSize="21sp"/>
+                    android:textColor="#050505"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
 
                 <com.bandarproperti.customfonts.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
@@ -63,7 +61,56 @@
                     android:text="Edit Profil"
                     android:textColor="@color/black"
                     android:textSize="19sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="32dp">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_email"/>
+
+                        <com.bandarproperti.customfonts.MyTextView_Roboto_Medium
+                            android:id="@+id/accountEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:text="-"
+                            android:textColor="#FFA2A2A2"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_phone_black"/>
+
+                        <com.bandarproperti.customfonts.MyTextView_Roboto_Medium
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:text="-"
+                            android:textColor="#FFA2A2A2"/>
+                    </LinearLayout>
             </LinearLayout>
+
 
             <com.bandarproperti.customfonts.MyTextView_Roboto_Medium
                 android:id="@+id/loginBtn"
@@ -77,7 +124,7 @@
                 android:paddingLeft="90dp"
                 android:paddingRight="90dp"
                 android:paddingTop="12dp"
-                android:text="Login"
+                android:text="Masuk"
                 android:textColor="#ffffff"
                 android:textSize="16dp" />
 
@@ -97,7 +144,7 @@
                 android:textColor="#ffffff"
                 android:textSize="16dp"
                 android:visibility="gone"/>
+            </LinearLayout>
         </LinearLayout>
-
     </android.support.constraint.ConstraintLayout>
 </layout>

@@ -29,12 +29,12 @@ public class AkunActivity extends AppCompatActivity {
 
                     case R.id.beranda:
                         startActivity(new Intent(getApplicationContext(),HomeActivity.class));
-                        overridePendingTransition(0,0);
+//                        overridePendingTransition(0,0);
                         return true;
 
                     case R.id.favorit:
                         startActivity(new Intent(getApplicationContext(),FavoritActivity.class));
-                        overridePendingTransition(0,0);
+//                        overridePendingTransition(0,0);
                         return true;
 
 

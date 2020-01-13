@@ -5,8 +5,17 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.Toast;
+
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
+import android.widget.CompoundButton;
 
 import com.bandarproperti.R;
 import com.bandarproperti.config.Constants;
@@ -28,6 +37,9 @@ import retrofit2.Response;
 
 public class SignInActivity extends AppCompatActivity {
 
+//     EditText PassInput;
+//     CheckBox ShowPass;
+
     private ActivitySignInBinding signInBinding;
 
     RequestInterface requestInterface;
@@ -39,6 +51,25 @@ public class SignInActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+//      EditText  PassInput =  findViewById(R.id.customerPassword);
+//      CheckBox  ShowPass =  findViewById(R.id.showpass);
+
+
+//        ShowPass.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//                if (!isChecked) {
+//                    PassInput.setTransformationMethod(PasswordTransformationMethod.getInstance());
+//                } else {
+//                    PassInput.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+//                }
+//
+//            }
+//        });
+
+
+
         signInBinding = DataBindingUtil.setContentView(this, R.layout.activity_sign_in);
 
         setUp();
