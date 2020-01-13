@@ -142,6 +142,15 @@
                 android:layout_marginRight="60dp"
                 android:background="#acacac" />
 
+<!--            <android.support.v7.widget.AppCompatCheckBox-->
+<!--                android:id="@+id/showPass"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="60dp"-->
+<!--                android:textColor="#DA918E8E"-->
+<!--                android:textSize="13dp"-->
+<!--                android:text="Show Password" />-->
+
             <com.bandarproperti.customfonts.MyTextView_Roboto_Medium
                 android:id="@+id/customerRegisterBtn"
                 android:layout_width="wrap_content"
@@ -183,12 +192,14 @@
                     android:textSize="13dp"
                     android:textColor="@color/colorPrimary"/>
             </LinearLayout>
+
+
         </LinearLayout>
 
         <com.scwang.wave.MultiWaveHeader
             android:id="@+id/waveFooter"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
