@@ -43,12 +43,12 @@ public class DashboardFragment extends BaseFragment {
         {
             dashboardBinding.loginLayout.setVisibility(View.VISIBLE);
             dashboardBinding.refreshLayout.setVisibility(View.GONE);
+            dashboardBinding.emptyLayout.setVisibility(View.GONE);
         }
         else
         {
             dashboardBinding.refreshLayout.setVisibility(View.VISIBLE);
             dashboardBinding.loginLayout.setVisibility(View.GONE);
-            dashboardBinding.emptyLayout.setVisibility(View.GONE);
 
             LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
             dashboardBinding.recyclerview.setLayoutManager(layoutManager);

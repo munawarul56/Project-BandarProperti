@@ -75,23 +75,31 @@ public class SignUpActivity extends AppCompatActivity {
         {
             signUpBinding.customerEmail.setError("Masukkan email");
         }
+        else if(signUpBinding.customerPhone.getText().toString().isEmpty())
+        {
+            signUpBinding.customerPhone.setError("Masukkan Nomor HP");
+        }
         else if(signUpBinding.customerPassword.getText().toString().isEmpty())
         {
             signUpBinding.customerPassword.setError("Masukkan password");
         }
         else
         {
-            sendRegistration(signUpBinding.customerName.getText().toString().trim(), signUpBinding.customerEmail.getText().toString().trim(), signUpBinding.customerPassword.getText().toString().trim());
+            sendRegistration(signUpBinding.customerName.getText().toString().trim(),
+                    signUpBinding.customerEmail.getText().toString().trim(),
+                    signUpBinding.customerPhone.getText().toString().trim(),
+                    signUpBinding.customerPassword.getText().toString().trim());
         }
     }
 
-    private void sendRegistration(String name, String email, String password)
+    private void sendRegistration(String name, String email, String phone, String password)
     {
         showProgress("Mengirim registrasi..");
 
         final Customer customer = new Customer();
         customer.setName(name);
         customer.setEmail(email);
+        customer.setPhone(phone);
         customer.setPassword(password);
 
         Call<CustomerResponse> responseCall = requestInterface.register(customer);

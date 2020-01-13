@@ -117,6 +117,40 @@
                 android:padding="10dp">
 
                 <com.bandarproperti.customfonts.EditText_Roboto_Regular
+                    android:id="@+id/customerPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:hint="Nomor HP"
+                    android:inputType="text"
+                    android:textColor="#000"
+                    android:textColorHint="#A2A2A2"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    app:srcCompat="@drawable/ic_phone_light" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:background="#acacac" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <com.bandarproperti.customfonts.EditText_Roboto_Regular
                     android:id="@+id/customerPassword"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
