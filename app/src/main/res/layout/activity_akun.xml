@@ -19,13 +19,6 @@
             android:padding="10dp"
             android:orientation="vertical">
 
-<!--            <ImageView-->
-<!--                android:layout_marginTop="45dp"-->
-<!--                android:layout_gravity="center_horizontal"-->
-<!--                android:layout_width="150dp"-->
-<!--                android:layout_height="150dp"-->
-<!--                android:src="@drawable/ic_logo_bandar_properti_orange"/>-->
-
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_marginTop="45dp"
                 android:layout_gravity="center_horizontal"
