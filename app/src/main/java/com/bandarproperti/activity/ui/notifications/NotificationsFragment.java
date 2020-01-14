@@ -32,6 +32,7 @@ public class NotificationsFragment extends BaseFragment {
 
         if(preference.isLoggedIn())
         {
+            notificationBinding.accountPhone.setText(user.get(Constants.PrefManager.USER_PHONE));
             notificationBinding.accountEmail.setText(user.get(Constants.PrefManager.USER_EMAIL));
             notificationBinding.accountName.setText(user.get(Constants.PrefManager.USER_NAME));
 
@@ -55,6 +56,7 @@ public class NotificationsFragment extends BaseFragment {
                     notificationBinding.signOutBtn.setVisibility(View.GONE);
                     notificationBinding.loginBtn.setVisibility(View.VISIBLE);
 
+                    notificationBinding.accountPhone.setText("-");
                     notificationBinding.accountEmail.setText("-");
                     notificationBinding.accountName.setText("-");
                 });
@@ -67,6 +69,7 @@ public class NotificationsFragment extends BaseFragment {
         }
         else
         {
+            notificationBinding.accountPhone.setText("-");
             notificationBinding.accountEmail.setText("-");
             notificationBinding.accountName.setText("-");
 
