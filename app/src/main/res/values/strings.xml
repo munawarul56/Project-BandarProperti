@@ -1,10 +1,6 @@
 <resources>
     <string name="app_name">Bandar Properti</string>
-    <string name="description">Royal De Khansa Residence, cluster minimalis terbaik dikawasan Kota Banda Aceh untuk tahun 2019 ini. Memadukan konsep modern dan kenyamanan bagi penghuninya dengan fasilitas terbaik.
-
-Lokasi Desa Kalut, Aceh Besar. 500m dari Jalan Soekarno-Hatta, pertengahan antara Simpang Lambaro dan Gedung Wali Nanggroe.
-
-Berada dikawasan berkembang dan sangat prospektif dan bernilai investasi tinggi. Lokasi sejuk dengan view pegunungan, bebas banjir dan bebas macet. Hanya 7-10 menit dari pusat Kota Banda Aceh.</string>
+    <string name="description">-</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_home">Beranda</string>
     <string name="title_dashboard">Favorit</string>
@@ -12,4 +8,18 @@ Berada dikawasan berkembang dan sangat prospektif dan bernilai investasi tinggi.
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="next">Lanjut</string>
+    <string name="skip">Lewati</string>
+    <string name="start">Selesai</string>
+    <string name="slide_1_title">Slide 1</string>
+    <string name="slide_1_desc">Nikmati fasilitas renang dengan pemandangan keren</string>
+    <string name="slide_2_title">Slide 2 </string>
+    <string name="slide_2_desc">Jelajahi pantai dengan gaya yang menantang</string>
+    <string name="slide_3_title">Slide 3</string>
+    <string name="slide_3_desc">View bawah laut yang menjadi sorotan dunia</string>
+    <string name="play_again_desc">Untuk mwlihatnya lagi Settings -> apps -> Intro View -> clear data</string>
+    <string name="play_again">Play Again</string>
+
 </resources>
