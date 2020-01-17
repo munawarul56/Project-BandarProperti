@@ -39,8 +39,6 @@
         <activity
             android:name=".activity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".AkunActivity" />
-        <activity android:name=".FavoritActivity" />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -54,7 +52,6 @@
         <activity
             android:name=".activity.SignUpActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".HomeActivity" />
         <activity
             android:name=".activity.PropertyDetailsActivity"
             android:theme="@style/AppTheme.NoActionBar" />
