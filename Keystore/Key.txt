@@ -1,0 +1,3 @@
+Key Password	: bandar123
+Key Alias	: BandarKey
+Key Alias Pass	: bandar123
