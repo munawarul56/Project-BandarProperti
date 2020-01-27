@@ -24,6 +24,7 @@
     <color name="dot_active_screen1">#FF972B</color>
     <color name="dot_active_screen2">#FF972B</color>
     <color name="dot_active_screen3">#FF972B</color>
+    <color name="tes">#FF972B</color>
 
     <array name="array_dot_active">
         <item>@color/dot_active_screen1</item>
