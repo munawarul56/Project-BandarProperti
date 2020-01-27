@@ -6,8 +6,8 @@ android {
         applicationId "com.bandarproperti"
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "2.0"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -20,6 +20,8 @@ android {
             storePassword "bandar123"
             keyAlias "BandarKey"
             keyPassword "bandar123"
+            v2SigningEnabled false
+
         }
     }
 
